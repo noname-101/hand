@@ -25,6 +25,7 @@
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{times}
+\usepackage{needspace}
 
 % ==================== PAGE GEOMETRY ====================
 \geometry{
@@ -56,9 +57,15 @@
 
 % ==================== SECTION FORMATTING ====================
 \titleformat{\section}
-  {\normalfont\large\bfseries}{\thesection}{1em}{}
+  {\needspace{5\baselineskip}\normalfont\large\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}
-  {\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+  {\needspace{3\baselineskip}\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\needspace{2\baselineskip}\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+% Better spacing control
+\setlength{\parskip}{0.5em}
+\raggedbottom  % Allow variable page heights for better layout
 
 % ==================== HEADER AND FOOTER ====================
 \pagestyle{fancy}
@@ -424,30 +431,6 @@ The scope of this project encompasses:
     \item Limited to gestures visible to a standard webcam
     \item Performance dependent on camera quality and processing power
 \end{itemize}
-
-\section{Organization of the Report}
-
-This report is organized into eight chapters:
-
-\begin{description}
-    \item[Chapter 1: Introduction] Provides an overview of the project, motivation, problem statement, objectives, and scope.
-    
-    \item[Chapter 2: Literature Survey] Reviews existing research and systems in hand gesture recognition, comparing different approaches and technologies.
-    
-    \item[Chapter 3: Requirements and Specifications] Details the functional and non-functional requirements, hardware and software specifications, and system constraints.
-    
-    \item[Chapter 4: System Design] Presents the system architecture, component design, data flow diagrams, and module descriptions.
-    
-    \item[Chapter 5: Algorithm and Implementation] Describes the core algorithms, implementation details, and code listings for key components.
-    
-    \item[Chapter 6: Testing and Validation] Covers the testing methodology, test cases, performance benchmarks, and validation results.
-    
-    \item[Chapter 7: Results and Discussion] Analyzes the system performance, presents experimental results, and discusses findings.
-    
-    \item[Chapter 8: Conclusion and Future Scope] Summarizes the project achievements and outlines potential future enhancements.
-\end{description}
-
-The report also includes comprehensive appendices with complete source code, user manual, installation guide, troubleshooting information, and API documentation.
 
 % ==================== CHAPTER 2: LITERATURE SURVEY ====================
 \chapter{LITERATURE SURVEY}
