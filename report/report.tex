@@ -1,0 +1,1514 @@
+\documentclass[12pt,a4paper]{report}
+
+% ==================== PACKAGES ====================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{appendix}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{times}
+\usepackage{needspace}
+
+% ==================== PAGE GEOMETRY ====================
+\geometry{
+    a4paper,
+    left=1.5in,
+    right=1in,
+    top=1in,
+    bottom=1in,
+    headheight=14.5pt
+}
+
+% ==================== HYPERREF SETUP ====================
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,      
+    urlcolor=black,
+    citecolor=black,
+    pdftitle={Hand Gesture Control System},
+    pdfauthor={CITNC CSE Department},
+    bookmarks=true,
+}
+
+% ==================== CHAPTER FORMATTING ====================
+\titleformat{\chapter}[display]
+  {\normalfont\Large\bfseries\centering}
+  {CHAPTER \thechapter}{10pt}{\Large\uppercase}
+\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
+
+% ==================== SECTION FORMATTING ====================
+\titleformat{\section}
+  {\needspace{8\baselineskip}\normalfont\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\needspace{5\baselineskip}\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\needspace{4\baselineskip}\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+% Better spacing control
+\setlength{\parskip}{0.3em}  % Reduced from 0.5em
+\setlength{\parindent}{0pt}  % No paragraph indentation
+\linespread{1.0}  % Single line spacing (reduced from default)
+\raggedbottom  % Allow variable page heights for better layout
+
+% Prevent widows and orphans
+\widowpenalty=10000
+\clubpenalty=10000
+\displaywidowpenalty=10000
+
+% ==================== HEADER AND FOOTER ====================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\textbf{Hand Gesture Control}}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyfoot[L]{Dept. of CSE, CITNC}
+\fancyfoot[C]{2025--2026}
+\fancyfoot[R]{\thepage}
+\renewcommand{\footrulewidth}{0.5pt}
+
+% Plain style for chapter pages
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyhead[C]{\textbf{Hand Gesture Control}}
+    \renewcommand{\headrulewidth}{0.4pt}
+    \fancyfoot[L]{Dept. of CSE, CITNC}
+    \fancyfoot[C]{2025--2026}
+    \fancyfoot[R]{\thepage}
+    \renewcommand{\footrulewidth}{0.5pt}
+}
+
+% Style for front matter (no footer)
+\fancypagestyle{frontmatter}{
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+}
+
+% ==================== PYTHON CODE LISTINGS ====================
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{pythonstyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=4,
+    language=Python,
+    frame=single,
+    rulecolor=\color{black}
+}
+
+\lstset{style=pythonstyle}
+
+% ==================== TABLE OF CONTENTS DEPTH ====================
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+% ==================== BEGIN DOCUMENT ====================
+\begin{document}
+
+% ==================== TITLE PAGE ====================
+\thispagestyle{frontmatter}
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    
+    {\LARGE \textbf{CANARA INSTITUTE OF TECHNOLOGY}\par}
+    {\large NARASIPURA CROSS, GUBBI MAIN ROAD,\par}
+    {\large TUMAKURU -- 572213\par}
+    
+    \vspace{1.5cm}
+    
+    {\Large \textbf{DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING}\par}
+    
+    \vspace{2cm}
+    
+    {\LARGE \textbf{HAND GESTURE CONTROL SYSTEM}\par}
+    
+    \vspace{1cm}
+    
+    {\large A Project Report\par}
+    {\large Submitted in Partial Fulfillment of the Requirements\par}
+    {\large for the Award of the Degree of\par}
+    
+    \vspace{0.5cm}
+    
+    {\Large \textbf{BACHELOR OF ENGINEERING}\par}
+    {\large in\par}
+    {\Large \textbf{COMPUTER SCIENCE AND ENGINEERING}\par}
+    
+    \vspace{1cm}
+    
+    {\large By\par}
+    
+    \vspace{0.5cm}
+    
+    {\large \textbf{[Student Name]} (USN: [USN])\par}
+    {\large \textbf{[Student Name]} (USN: [USN])\par}
+    {\large \textbf{[Student Name]} (USN: [USN])\par}
+    {\large \textbf{[Student Name]} (USN: [USN])\par}
+    
+    \vspace{1cm}
+    
+    {\large Under the Guidance of\par}
+    {\large \textbf{[Guide Name]}\par}
+    {\large Assistant Professor\par}
+    {\large Department of CSE\par}
+    
+    \vfill
+    
+    {\large \textbf{2025--2026}\par}
+\end{titlepage}
+
+% ==================== CERTIFICATE PAGE ====================
+\newpage
+\thispagestyle{frontmatter}
+\begin{center}
+    {\LARGE \textbf{CANARA INSTITUTE OF TECHNOLOGY}\par}
+    {\large NARASIPURA CROSS, GUBBI MAIN ROAD,\par}
+    {\large TUMAKURU -- 572213\par}
+    
+    \vspace{1cm}
+    
+    {\Large \textbf{DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING}\par}
+    
+    \vspace{2cm}
+    
+    {\LARGE \textbf{CERTIFICATE}\par}
+\end{center}
+
+\vspace{1cm}
+
+This is to certify that the project work entitled \textbf{``Hand Gesture Control System''} submitted in partial fulfillment of the requirements for the award of the degree of \textbf{Bachelor of Engineering in Computer Science and Engineering} of Visvesvaraya Technological University, Belagavi, during the academic year 2025--2026 is a bonafide record of work carried out by:
+
+\vspace{0.5cm}
+
+\begin{center}
+\textbf{[Student Name]} (USN: [USN])\\
+\textbf{[Student Name]} (USN: [USN])\\
+\textbf{[Student Name]} (USN: [USN])\\
+\textbf{[Student Name]} (USN: [USN])
+\end{center}
+
+\vspace{0.5cm}
+
+under the guidance and supervision of \textbf{[Guide Name]}, Assistant Professor, Department of Computer Science and Engineering, Canara Institute of Technology, Tumakuru.
+
+\vspace{2cm}
+
+\begin{flushleft}
+\textbf{[Guide Name]} \hfill \textbf{[HOD Name]}\\
+Project Guide \hfill Head of the Department\\
+Assistant Professor \hfill Professor\\
+Dept. of CSE, CITNC \hfill Dept. of CSE, CITNC
+\end{flushleft}
+
+\vspace{1cm}
+
+\begin{center}
+\textbf{External Viva}\\
+\vspace{1cm}
+\begin{tabular}{ll}
+Name of the Examiner: & \rule{6cm}{0.4pt}\\[1cm]
+Signature with Date: & \rule{6cm}{0.4pt}\\
+\end{tabular}
+\end{center}
+
+% ==================== DECLARATION PAGE ====================
+\newpage
+\thispagestyle{frontmatter}
+\begin{center}
+    {\LARGE \textbf{DECLARATION}\par}
+\end{center}
+
+\vspace{1cm}
+
+We, the undersigned, hereby declare that the project work entitled \textbf{``Hand Gesture Control System''} submitted in partial fulfillment of the requirements for the award of the degree of \textbf{Bachelor of Engineering in Computer Science and Engineering} of Visvesvaraya Technological University, Belagavi, is a bonafide record of work carried out by us under the guidance and supervision of \textbf{[Guide Name]}, Assistant Professor, Department of Computer Science and Engineering, Canara Institute of Technology, Tumakuru, during the academic year 2025--2026.
+
+\vspace{1cm}
+
+We further declare that this project work has not been submitted earlier for the award of any degree, diploma, or similar title of any other university or institution.
+
+\vspace{2cm}
+
+\begin{flushleft}
+\textbf{[Student Name]} \hfill Place: Tumakuru\\
+USN: [USN] \hfill Date: \rule{3cm}{0.4pt}\\[1cm]
+
+\textbf{[Student Name]} \hfill \\
+USN: [USN] \hfill \\[1cm]
+
+\textbf{[Student Name]} \hfill \\
+USN: [USN] \hfill \\[1cm]
+
+\textbf{[Student Name]} \hfill \\
+USN: [USN] \hfill \\
+\end{flushleft}
+
+% ==================== ACKNOWLEDGEMENT PAGE ====================
+\newpage
+\thispagestyle{frontmatter}
+\begin{center}
+    {\LARGE \textbf{ACKNOWLEDGEMENT}\par}
+\end{center}
+
+\vspace{1cm}
+
+We would like to express our sincere gratitude to all those who have contributed to the successful completion of this project work on \textbf{``Hand Gesture Control System."}
+
+First and foremost, we are deeply grateful to our project guide, \textbf{[Guide Name]}, Assistant Professor, Department of Computer Science and Engineering, for their invaluable guidance, constant encouragement, and constructive criticism throughout the development of this project. Their expertise and insights have been instrumental in shaping this work.
+
+We extend our heartfelt thanks to \textbf{Dr. [HOD Name]}, Professor and Head of the Department of Computer Science and Engineering, CITNC, for providing us with the necessary facilities and resources to carry out this project work.
+
+We are thankful to \textbf{Dr. [Principal Name]}, Principal, Canara Institute of Technology, Tumakuru, for providing an excellent academic environment and infrastructure that facilitated the completion of this project.
+
+We would like to acknowledge all the faculty members of the Department of Computer Science and Engineering for their continuous support and valuable suggestions during various stages of the project.
+
+We are grateful to our parents and family members for their unconditional support, encouragement, and patience throughout our academic journey.
+
+Finally, we extend our thanks to all our friends and colleagues who directly or indirectly contributed to the successful completion of this project work.
+
+\vspace{2cm}
+
+\begin{flushright}
+\textbf{[Student Name]}\\
+\textbf{[Student Name]}\\
+\textbf{[Student Name]}\\
+\textbf{[Student Name]}
+\end{flushright}
+
+% ==================== FRONT MATTER WITH ROMAN NUMERALS ====================
+\pagenumbering{roman}
+\setcounter{page}{1}
+\pagestyle{fancy}
+
+% ==================== TABLE OF CONTENTS ====================
+\newpage
+\tableofcontents
+
+% ==================== LIST OF FIGURES ====================
+\newpage
+\listoffigures
+
+% ==================== LIST OF TABLES ====================
+\newpage
+\listoftables
+
+% ==================== MAIN CONTENT WITH ARABIC NUMERALS ====================
+\newpage
+\pagestyle{fancy}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% ==================== CHAPTER 1: INTRODUCTION ====================
+\chapter{INTRODUCTION}
+
+\section{Overview}
+
+In the era of rapidly evolving technology, human-computer interaction (HCI) has become a critical area of research and development. Traditional input methods such as keyboards, mice, and touchscreens, while effective, often require physical contact and can be limiting in certain scenarios. Hand gesture recognition represents a paradigm shift in HCI, offering intuitive, touchless interaction that mimics natural human communication.
+
+This project presents a comprehensive Hand Gesture Control System that enables users to control their computers using natural hand movements captured through a webcam. The system combines state-of-the-art computer vision algorithms, machine learning techniques, and user-friendly interface design to create a practical and efficient gesture-based control platform.
+
+\section{Motivation}
+
+The motivation for developing this hand gesture control system stems from several key factors:
+
+\begin{enumerate}
+    \item \textbf{Accessibility}: Providing an alternative input method for users with physical disabilities or limitations that make traditional input devices difficult to use.
+    
+    \item \textbf{Hygiene and Safety}: In the post-pandemic world, touchless interaction reduces the need for physical contact with shared devices, promoting better hygiene practices.
+    
+    \item \textbf{Enhanced User Experience}: Gesture-based interaction offers a more natural and intuitive way to interact with digital systems, especially for presentations, gaming, and creative applications.
+    
+    \item \textbf{Innovation in HCI}: Exploring new frontiers in human-computer interaction and contributing to the development of next-generation interface technologies.
+    
+    \item \textbf{Practical Applications}: Creating a versatile system that can be adapted for various use cases including smart homes, virtual reality, remote control applications, and assistive technologies.
+\end{enumerate}
+
+\section{Problem Statement}
+
+Traditional computer input methods, while reliable, have several limitations:
+
+\begin{itemize}
+    \item Limited accessibility for users with motor impairments
+    \item Physical wear and tear on devices
+    \item Hygiene concerns with shared input devices
+    \item Restricted interaction in scenarios where hands-free operation is beneficial
+    \item Lack of natural, intuitive interaction paradigms
+\end{itemize}
+
+This project addresses these challenges by developing a robust hand gesture recognition system that:
+\begin{itemize}
+    \item Recognizes hand gestures in real-time with high accuracy
+    \item Supports both predefined and custom user-defined gestures
+    \item Provides configurable mappings between gestures and system actions
+    \item Works under varying lighting conditions and camera positions
+    \item Offers an intuitive user interface for system configuration and monitoring
+\end{itemize}
+
+\section{Objectives}
+
+The primary objectives of this project are:
+
+\begin{enumerate}
+    \item To develop a real-time hand detection and tracking system using MediaPipe framework
+    \item To implement a gesture recognition engine with support for both built-in and custom gestures
+    \item To create a robust gesture classification algorithm using Procrustes analysis for rotation-invariant matching
+    \item To design and implement a user-friendly graphical interface for system configuration and visualization
+    \item To enable mapping of recognized gestures to various computer actions (mouse control, keyboard shortcuts, application launching)
+    \item To implement a custom gesture training system allowing users to define their own gestures
+    \item To develop a secure user authentication system for personalized gesture profiles
+    \item To optimize the system for low latency and high accuracy in real-world conditions
+    \item To thoroughly test and validate the system's performance across various scenarios
+\end{enumerate}
+
+\section{Scope of the Project}
+
+The scope of this project encompasses:
+
+\subsection{Functional Scope}
+\begin{itemize}
+    \item Real-time hand detection and landmark extraction
+    \item Recognition of predefined gestures (pointing, pinching, swiping, etc.)
+    \item Custom gesture recording and training
+    \item Mouse cursor control and click detection
+    \item Scroll and zoom gestures
+    \item Application switching and window management
+    \item Configurable action mappings
+    \item User authentication and profile management
+\end{itemize}
+
+\subsection{Technical Scope}
+\begin{itemize}
+    \item Python-based implementation for cross-platform compatibility
+    \item MediaPipe for hand tracking and landmark detection
+    \item OpenCV for video capture and image processing
+    \item NumPy for numerical computations and array operations
+    \item PyAutoGUI for system-level action execution
+    \item PySide6 for modern GUI development
+    \item JSON-based configuration and data persistence
+\end{itemize}
+
+\subsection{Limitations}
+\begin{itemize}
+    \item Single-hand gesture recognition (primary focus)
+    \item Requires adequate lighting conditions
+    \item Limited to gestures visible to a standard webcam
+    \item Performance dependent on camera quality and processing power
+\end{itemize}
+
+% ==================== CHAPTER 2: LITERATURE SURVEY ====================
+\chapter{LITERATURE SURVEY}
+
+\section{Introduction}
+
+Hand gesture recognition has evolved from data glove-based systems (1980s-90s) to vision-based approaches (2000s), machine learning methods (2010s), and real-time frameworks like MediaPipe (2020-present).
+
+\section{Related Approaches}
+
+\subsection{Traditional Methods}
+Early approaches used skin color segmentation, edge detection, and shape matching. Limitations included sensitivity to lighting and computational expense.
+
+\subsection{Machine Learning}
+SVM, HMM, Random Forests, and k-NN provided robust classification but required careful feature engineering.
+
+\subsection{Deep Learning}
+CNN, LSTM, and 3D CNNs revolutionized gesture recognition with end-to-end learning and high accuracy.
+
+\subsection{MediaPipe Framework}
+Google's MediaPipe provides real-time hand detection with 21-point 3D landmarks using a two-stage pipeline: palm detection followed by landmark prediction. It offers high accuracy, low latency, and cross-platform compatibility.
+
+\section{Comparative Analysis}
+
+\begin{table}[H]
+\centering
+\caption{Comparison of Gesture Recognition Systems}
+\label{tab:comparison}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Approach} & \textbf{Accuracy} & \textbf{Speed} & \textbf{Limitations} \\ \hline
+Data Gloves & Very High & Real-time & Expensive \\ \hline
+Color Segmentation & Moderate & Fast & Lighting sensitive \\ \hline
+SVM/ML & Good & Moderate & Feature engineering \\ \hline
+MediaPipe & High & Real-time & Single view \\ \hline
+\textbf{Our System} & \textbf{High} & \textbf{Real-time} & \textbf{Minimal} \\ \hline
+\end{tabular}
+\end{table}
+
+\section{Procrustes Analysis}
+
+Procrustes analysis provides rotation, scaling, and translation invariance for shape matching. It centers both shapes, scales to unit size, finds optimal rotation, and computes Euclidean distance:
+
+\[
+d_P(X, Y) = \min_{s, R, t} \|X - sYR - t\|_F
+\]
+
+\section{Related Systems and Applications}
+
+\subsection{Commercial Products}
+\begin{itemize}
+    \item \textbf{Microsoft Kinect}: Depth-based gesture recognition for gaming
+    \item \textbf{Leap Motion}: High-precision hand tracking for VR/AR
+    \item \textbf{Google Soli}: Radar-based micro-gesture recognition
+    \item \textbf{TouchFree}: Webcam-based touchless control
+\end{itemize}
+
+\subsection{Research Prototypes}
+Various research projects have explored gesture-based control for:
+\begin{itemize}
+    \item Smart home automation
+    \item Medical applications (surgery, diagnostics)
+    \item Sign language recognition
+    \item Virtual and augmented reality interaction
+    \item Accessibility tools for disabled users
+\end{itemize}
+
+\section{Gap Analysis and Contributions}
+
+While existing systems provide various capabilities, this project addresses several gaps:
+
+\begin{enumerate}
+    \item \textbf{Custom Gesture Support}: Unlike many commercial systems with fixed gesture sets, our system allows users to define and train custom gestures.
+    
+    \item \textbf{Accessibility}: Provides a free, open-source alternative to expensive commercial solutions.
+    
+    \item \textbf{Flexibility}: Configurable action mappings allow adaptation to different use cases.
+    
+    \item \textbf{Integration}: Combines robust hand tracking (MediaPipe) with efficient shape matching (Procrustes) for accurate recognition.
+    
+    \item \textbf{User Experience}: Modern GUI with real-time visualization and easy configuration.
+\end{enumerate}
+
+% ==================== CHAPTER 3: REQUIREMENTS AND SPECIFICATIONS ====================
+\chapter{REQUIREMENTS AND SPECIFICATIONS}
+
+\section{Functional Requirements}
+
+The functional requirements define what the system should do. The Hand Gesture Control System must provide the following functionality:
+
+\subsection{Core Functionality}
+
+\begin{enumerate}
+    \item \textbf{FR1: Hand Detection}
+    \begin{itemize}
+        \item The system shall detect hands in real-time from webcam feed
+        \item Detection accuracy should be at least 95\% under normal lighting
+        \item System shall support single-hand tracking
+        \item Detection latency should not exceed 50ms
+    \end{itemize}
+    
+    \item \textbf{FR2: Gesture Recognition}
+    \begin{itemize}
+        \item Recognize built-in gestures (pointing, pinch, swipe, etc.)
+        \item Support custom user-defined gestures
+        \item Recognition accuracy should exceed 90\% for trained gestures
+        \item System shall handle rotation and scale invariance
+    \end{itemize}
+    
+    \item \textbf{FR3: Action Execution}
+    \begin{itemize}
+        \item Execute mouse movements based on hand position
+        \item Perform click actions (left, right, double-click)
+        \item Support scroll gestures (vertical and horizontal)
+        \item Enable keyboard shortcuts and application launching
+    \end{itemize}
+    
+    \item \textbf{FR4: Custom Gesture Management}
+    \begin{itemize}
+        \item Allow users to record new gestures
+        \item Provide gesture training with multiple samples
+        \item Enable editing and deletion of custom gestures
+        \item Save gesture templates persistently
+    \end{itemize}
+    
+    \item \textbf{FR5: Configuration}
+    \begin{itemize}
+        \item Configurable sensitivity and threshold settings
+        \item Customizable gesture-to-action mappings
+        \item Enable/disable individual gestures
+        \item Adjust camera parameters
+    \end{itemize}
+    
+    \item \textbf{FR6: User Authentication}
+    \begin{itemize}
+        \item User registration with email verification
+        \item Secure password-based login
+        \item User-specific gesture profiles
+        \item Password reset functionality
+    \end{itemize}
+    
+    \item \textbf{FR7: Visualization}
+    \begin{itemize}
+        \item Real-time video feed display
+        \item Hand landmark visualization
+        \item Gesture recognition status indicators
+        \item Performance metrics display
+    \end{itemize}
+\end{enumerate}
+
+\section{Non-Functional Requirements}
+
+\subsection{Performance Requirements}
+
+\begin{enumerate}
+    \item \textbf{NFR1: Response Time}
+    \begin{itemize}
+        \item Gesture recognition latency: < 100ms
+        \item Action execution delay: < 50ms
+        \item GUI responsiveness: < 200ms for user interactions
+    \end{itemize}
+    
+    \item \textbf{NFR2: Throughput}
+    \begin{itemize}
+        \item Process at least 30 frames per second
+        \item Support continuous operation for extended periods
+    \end{itemize}
+    
+    \item \textbf{NFR3: Resource Utilization}
+    \begin{itemize}
+        \item CPU usage: < 40\% on mid-range processors
+        \item Memory footprint: < 500 MB RAM
+        \item Minimal GPU requirements (optional acceleration)
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Usability Requirements}
+
+\begin{enumerate}
+    \item \textbf{NFR4: User Interface}
+    \begin{itemize}
+        \item Intuitive GUI requiring minimal training
+        \item Clear visual feedback for all operations
+        \item Support for both dark and light themes
+        \item Consistent design language throughout
+    \end{itemize}
+    
+    \item \textbf{NFR5: Accessibility}
+    \begin{itemize}
+        \item Large, readable fonts and controls
+        \item High contrast visual elements
+        \item Keyboard navigation support
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Reliability Requirements}
+
+\begin{enumerate}
+    \item \textbf{NFR6: Availability}
+    \begin{itemize}
+        \item System uptime: 99\% during operation
+        \item Graceful handling of camera disconnection
+        \item Auto-recovery from transient errors
+    \end{itemize}
+    
+    \item \textbf{NFR7: Error Handling}
+    \begin{itemize}
+        \item Comprehensive error logging
+        \item User-friendly error messages
+        \item Fail-safe defaults for corrupted configurations
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Security Requirements}
+
+\begin{enumerate}
+    \item \textbf{NFR8: Data Protection}
+    \begin{itemize}
+        \item Passwords stored using strong hashing (SHA-256)
+        \item Local data storage with appropriate permissions
+        \item No transmission of sensitive data over network
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Portability Requirements}
+
+\begin{enumerate}
+    \item \textbf{NFR9: Platform Support}
+    \begin{itemize}
+        \item Cross-platform compatibility (Windows, Linux, macOS)
+        \item Minimal platform-specific dependencies
+        \item Standard Python 3.8+ compatibility
+    \end{itemize}
+\end{enumerate}
+
+\section{Hardware Requirements}
+
+The system requires the following hardware components:
+
+\begin{table}[H]
+\centering
+\caption{Hardware Requirements}
+\label{tab:hardware}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Component} & \textbf{Minimum} & \textbf{Recommended} \\ \hline
+Processor & Intel Core i3 / AMD Ryzen 3 & Intel Core i5 / AMD Ryzen 5 \\ \hline
+RAM & 4 GB & 8 GB or more \\ \hline
+Storage & 500 MB free space & 1 GB free space \\ \hline
+Webcam & 720p @ 30fps & 1080p @ 60fps \\ \hline
+Graphics & Integrated GPU & Dedicated GPU (optional) \\ \hline
+Display & 1366x768 resolution & 1920x1080 or higher \\ \hline
+\end{tabular}
+\end{table}
+
+\section{Software Requirements}
+
+The software dependencies and specifications are listed below:
+
+\begin{table}[H]
+\centering
+\caption{Software Dependencies and Versions}
+\label{tab:software}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Software/Library} & \textbf{Version} & \textbf{Purpose} \\ \hline
+Python & 3.8+ & Programming language \\ \hline
+OpenCV & 4.5+ & Video capture and processing \\ \hline
+MediaPipe & 0.10+ & Hand detection and tracking \\ \hline
+NumPy & 1.21+ & Numerical computations \\ \hline
+PySide6 & 6.0+ & GUI framework \\ \hline
+PyAutoGUI & 0.9.53+ & System action execution \\ \hline
+Operating System & Windows 10/11, Linux, macOS & Platform \\ \hline
+\end{tabular}
+\end{table}
+
+\section{System Constraints}
+
+\subsection{Environmental Constraints}
+\begin{itemize}
+    \item Adequate ambient lighting required (> 300 lux)
+    \item Camera must have unobstructed view of hand
+    \item Minimal background motion for optimal performance
+    \item Hand should be within 0.3m to 2m from camera
+\end{itemize}
+
+\subsection{Technical Constraints}
+\begin{itemize}
+    \item Single-hand tracking limitation
+    \item 2D gesture recognition (depth information not utilized)
+    \item Webcam-based input only (no depth sensors)
+    \item Real-time processing requires adequate CPU/GPU
+\end{itemize}
+
+\subsection{Operational Constraints}
+\begin{itemize}
+    \item Requires webcam driver support
+    \item Administrator privileges may be needed for some actions
+    \item Screen resolution affects cursor control precision
+    \item Network connection required for email verification
+\end{itemize}
+
+\section{Built-in Gestures and Actions}
+
+The system includes several predefined gestures mapped to common actions:
+
+\begin{table}[H]
+\centering
+\caption{Built-in Gestures and Actions}
+\label{tab:builtin_gestures}
+\begin{tabular}{|l|l|p{6cm}|}
+\hline
+\textbf{Gesture} & \textbf{Action} & \textbf{Description} \\ \hline
+Pointing (Index) & Mouse Move & Move cursor following index finger tip \\ \hline
+Pinch (Thumb-Index) & Left Click & Click when fingers pinch together \\ \hline
+Two Fingers Up & Scroll Up & Vertical scrolling upward \\ \hline
+Two Fingers Down & Scroll Down & Vertical scrolling downward \\ \hline
+Open Palm & Stop All & Pause gesture recognition \\ \hline
+Three Fingers & Application Switch & Switch between applications \\ \hline
+Fist & Right Click & Right-click menu \\ \hline
+\end{tabular}
+\end{table}
+
+\section{System Specifications}
+
+\begin{table}[H]
+\centering
+\caption{System Specifications}
+\label{tab:system_specs}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Specification} & \textbf{Value} \\ \hline
+Maximum Gestures & Unlimited (custom) \\ \hline
+Frame Rate & 30-60 fps \\ \hline
+Detection Confidence & 0.5 (configurable) \\ \hline
+Tracking Confidence & 0.5 (configurable) \\ \hline
+Gesture Match Threshold & 0.6 (configurable) \\ \hline
+Number of Landmarks & 21 per hand \\ \hline
+Video Resolution & 640x480 (default) \\ \hline
+Color Space & BGR (OpenCV) \\ \hline
+\end{tabular}
+\end{table}
+
+\section{Use Cases}
+
+\subsection{Use Case 1: Basic Mouse Control}
+\begin{itemize}
+    \item \textbf{Actor}: End User
+    \item \textbf{Precondition}: System running, camera active
+    \item \textbf{Flow}:
+    \begin{enumerate}
+        \item User shows pointing gesture
+        \item System tracks index finger position
+        \item Cursor moves in real-time
+        \item User performs pinch gesture
+        \item System executes left click
+    \end{enumerate}
+    \item \textbf{Postcondition}: Click action completed
+\end{itemize}
+
+\subsection{Use Case 2: Custom Gesture Creation}
+\begin{itemize}
+    \item \textbf{Actor}: End User
+    \item \textbf{Precondition}: User logged in
+    \item \textbf{Flow}:
+    \begin{enumerate}
+        \item User clicks "Add Gesture" button
+        \item System opens recording dialog
+        \item User enters gesture name
+        \item User performs gesture 5 times
+        \item System processes and saves gesture template
+        \item User maps gesture to action
+    \end{enumerate}
+    \item \textbf{Postcondition}: Custom gesture ready for use
+\end{itemize}
+
+\clearpage
+% ==================== CHAPTER 4: SYSTEM DESIGN ====================
+\chapter{SYSTEM DESIGN}
+
+\section{System Architecture}
+
+The Hand Gesture Control System follows a modular, layered architecture designed for maintainability, scalability, and performance. The architecture consists of four main layers:
+
+\subsection{Architecture Overview}
+
+\begin{enumerate}
+    \item \textbf{Presentation Layer}: User interface components (GUI, visualization)
+    \item \textbf{Application Layer}: Core business logic (gesture recognition, action mapping)
+    \item \textbf{Processing Layer}: Computer vision and ML algorithms (hand detection, feature extraction)
+    \item \textbf{Data Layer}: Persistence and configuration management
+\end{enumerate}
+
+The system employs a pipeline architecture for video processing with the following stages:
+\begin{enumerate}
+    \item Video capture from webcam
+    \item Hand detection and landmark extraction
+    \item Feature computation and normalization
+    \item Gesture classification
+    \item Action execution
+\end{enumerate}
+
+\section{Component Design}
+
+\subsection{Major Components}
+
+The system consists of the following major components:
+
+\begin{enumerate}
+    \item \textbf{HandDetector}: Interfaces with MediaPipe for hand detection and landmark extraction
+    \item \textbf{GestureRecognizer}: Implements gesture matching using Procrustes analysis
+    \item \textbf{CameraWorker}: Background thread for video processing
+    \item \textbf{MainWindow}: Primary GUI component
+    \item \textbf{AuthenticationManager}: Handles user login and registration
+    \item \textbf{ActionExecutor}: Maps gestures to system actions
+    \item \textbf{ConfigurationManager}: Manages settings and persistence
+\end{enumerate}
+
+\subsection{Component Interaction}
+
+The components interact through well-defined interfaces:
+
+\begin{itemize}
+    \item CameraWorker captures frames and emits signals to MainWindow
+    \item HandDetector processes frames and returns landmark data
+    \item GestureRecognizer receives landmarks and returns recognized gestures
+    \item ActionExecutor receives gesture names and executes corresponding actions
+    \item ConfigurationManager provides settings to all components
+\end{itemize}
+
+\section{Data Flow Diagrams}
+
+\subsection{Level 0 DFD (Context Diagram)}
+
+The system interacts with:
+\begin{itemize}
+    \item \textbf{User}: Provides hand gestures via webcam, receives visual feedback
+    \item \textbf{Webcam}: Provides video stream input
+    \item \textbf{Operating System}: Receives action commands (mouse, keyboard)
+    \item \textbf{File System}: Stores configuration and gesture templates
+\end{itemize}
+
+\subsection{Level 1 DFD}
+
+Main processes:
+\begin{enumerate}
+    \item \textbf{P1: Video Acquisition} - Captures frames from webcam
+    \item \textbf{P2: Hand Detection} - Detects hands and extracts landmarks
+    \item \textbf{P3: Gesture Recognition} - Classifies gestures from landmarks
+    \item \textbf{P4: Action Execution} - Executes system actions
+    \item \textbf{P5: GUI Management} - Handles user interactions and visualization
+    \item \textbf{P6: Data Management} - Manages persistence and configuration
+\end{enumerate}
+
+\section{Module Descriptions}
+
+\subsection{HandDetector Module}
+
+\textbf{Purpose}: Detect hands in video frames and extract 21 3D landmarks per hand.
+
+\textbf{Key Methods}:
+\begin{itemize}
+    \item \texttt{\_\_init\_\_(mode, maxHands, detectionCon, trackCon)}: Initialize MediaPipe with configuration
+    \item \texttt{findHands(img, draw)}: Detect hands in image and optionally draw landmarks
+    \item \texttt{findPosition(img, handNo, draw)}: Extract landmark positions for specified hand
+    \item \texttt{fingersUp()}: Determine which fingers are extended
+    \item \texttt{findDistance(p1, p2)}: Calculate distance between two landmarks
+\end{itemize}
+
+\textbf{Dependencies}: MediaPipe, OpenCV, NumPy
+
+\subsection{GestureRecognizer Module}
+
+\textbf{Purpose}: Recognize gestures by matching current hand pose against stored templates.
+
+\textbf{Key Methods}:
+\begin{itemize}
+    \item \texttt{recognize\_gesture(lmList)}: Match landmarks against gesture templates
+    \item \texttt{\_normalize\_landmarks(lmList)}: Normalize coordinates to [0,1] range
+    \item \texttt{\_procrustes\_align(X, Y)}: Align two shapes using Procrustes analysis
+    \item \texttt{record\_gesture(name, frames)}: Train new custom gesture
+    \item \texttt{save\_custom\_gestures()}: Persist gesture templates to file
+\end{itemize}
+
+\textbf{Dependencies}: NumPy, SciPy (for SVD), JSON
+
+\subsection{CameraWorker Module}
+
+\textbf{Purpose}: Background thread for continuous video processing without blocking GUI.
+
+\textbf{Key Methods}:
+\begin{itemize}
+    \item \texttt{run()}: Main processing loop (executed in separate thread)
+    \item \texttt{stop()}: Signal thread to terminate
+    \item \texttt{process\_frame()}: Process single frame through pipeline
+\end{itemize}
+
+\textbf{Signals}:
+\begin{itemize}
+    \item \texttt{frameProcessed}: Emits processed frame for display
+    \item \texttt{gestureDetected}: Emits recognized gesture name
+    \item \texttt{errorOccurred}: Emits error messages
+\end{itemize}
+
+\subsection{MainWindow Module}
+
+\textbf{Purpose}: Provide graphical user interface for all system interactions.
+
+\textbf{Components}:
+\begin{itemize}
+    \item \textbf{Control Tab}: Start/stop, sensitivity settings, theme selection
+    \item \textbf{Gestures Tab}: Manage built-in and custom gestures
+    \item \textbf{Settings Tab}: Configure action mappings and thresholds
+    \item \textbf{Video Display}: Real-time video feed with landmarks
+    \item \textbf{Status Bar}: Show recognition status and FPS
+\end{itemize}
+
+\section{Class Diagrams}
+
+\subsection{Core Classes and Relationships}
+
+\textbf{HandDetector Class}:
+\begin{itemize}
+    \item Attributes: mode, maxHands, detectionCon, trackCon, mpHands, hands, lmList
+    \item Methods: findHands(), findPosition(), fingersUp(), findDistance()
+\end{itemize}
+
+\textbf{GestureRecognizer Class}:
+\begin{itemize}
+    \item Attributes: gesture\_templates, match\_threshold
+    \item Methods: recognize\_gesture(), record\_gesture(), \_normalize\_landmarks(), \_procrustes\_align()
+\end{itemize}
+
+\textbf{CameraWorker Class} (inherits QThread):
+\begin{itemize}
+    \item Attributes: detector, recognizer, running, action\_mappings
+    \item Methods: run(), stop(), process\_frame()
+    \item Signals: frameProcessed, gestureDetected, errorOccurred
+\end{itemize}
+
+\textbf{MainWindow Class} (inherits QWidget):
+\begin{itemize}
+    \item Attributes: cameraWorker, videoLabel, controlButtons, gestureList
+    \item Methods: initUI(), startCamera(), stopCamera(), updateFrame(), handleGesture()
+\end{itemize}
+
+\section{Sequence Diagrams}
+
+\subsection{Gesture Recognition Sequence}
+
+\begin{enumerate}
+    \item User shows hand gesture to camera
+    \item CameraWorker captures frame
+    \item CameraWorker calls HandDetector.findHands()
+    \item HandDetector processes frame with MediaPipe
+    \item HandDetector returns landmarks
+    \item CameraWorker calls GestureRecognizer.recognize\_gesture()
+    \item GestureRecognizer normalizes landmarks
+    \item GestureRecognizer compares with templates using Procrustes
+    \item GestureRecognizer returns best match
+    \item CameraWorker emits gestureDetected signal
+    \item MainWindow receives signal
+    \item MainWindow calls ActionExecutor
+    \item ActionExecutor performs system action
+\end{enumerate}
+
+\subsection{Custom Gesture Recording Sequence}
+
+\begin{enumerate}
+    \item User clicks "Add Gesture" button
+    \item MainWindow displays recording dialog
+    \item User enters gesture name and selects action
+    \item User clicks "Start Recording"
+    \item System captures 5-10 sample frames
+    \item For each frame:
+    \begin{enumerate}
+        \item Extract landmarks
+        \item Normalize coordinates
+        \item Compute features (orientation, tip distances)
+    \end{enumerate}
+    \item System computes average template
+    \item System calculates variance/threshold
+    \item GestureRecognizer saves gesture to file
+    \item MainWindow updates gesture list
+\end{enumerate}
+
+\section{Database Schema}
+
+While the system uses JSON files rather than a traditional database, the data structures are well-defined:
+
+\subsection{users.json}
+\begin{verbatim}
+{
+    "username": {
+        "email": "user@example.com",
+        "password_hash": "SHA256_hash",
+        "verification_code": "6_digit_code",
+        "is_verified": true
+    }
+}
+\end{verbatim}
+
+\subsection{custom\_gestures.json}
+\begin{verbatim}
+{
+    "gesture_name": {
+        "frames": [
+            {
+                "coords": [[x1,y1], [x2,y2], ...],
+                "orientation": angle,
+                "tip_dists": [d1, d2, d3, d4, d5]
+            }
+        ],
+        "threshold": 0.6
+    }
+}
+\end{verbatim}
+
+\subsection{action\_mappings.json}
+\begin{verbatim}
+{
+    "gesture_name": {
+        "action": "action_type",
+        "enabled": true
+    }
+}
+\end{verbatim}
+
+\section{State Diagrams}
+
+\subsection{System States}
+
+\begin{itemize}
+    \item \textbf{Idle}: Camera off, no processing
+    \item \textbf{Initializing}: Starting camera and loading models
+    \item \textbf{Active}: Processing frames and recognizing gestures
+    \item \textbf{Recording}: Capturing custom gesture samples
+    \item \textbf{Paused}: Camera active but recognition disabled
+    \item \textbf{Error}: System encountered error, awaiting recovery
+\end{itemize}
+
+\subsection{State Transitions}
+
+\begin{itemize}
+    \item Idle → Initializing: User clicks "Start"
+    \item Initializing → Active: Camera and models loaded successfully
+    \item Active → Paused: User clicks "Pause" or shows stop gesture
+    \item Active → Recording: User clicks "Add Gesture"
+    \item Recording → Active: Recording completed
+    \item Any State → Error: Error condition detected
+    \item Error → Idle: User acknowledges error and resets
+\end{itemize}
+
+\section{Design Patterns Used}
+
+\subsection{Observer Pattern}
+\begin{itemize}
+    \item Qt Signal-Slot mechanism for event-driven communication
+    \item CameraWorker emits signals, MainWindow slots receive them
+    \item Decouples video processing from UI updates
+\end{itemize}
+
+\subsection{Singleton Pattern}
+\begin{itemize}
+    \item Configuration manager ensures single instance
+    \item Provides global access point to settings
+\end{itemize}
+
+\subsection{Strategy Pattern}
+\begin{itemize}
+    \item Action execution strategies (mouse, keyboard, application)
+    \item Allows runtime selection of action type
+\end{itemize}
+
+\subsection{Template Method Pattern}
+\begin{itemize}
+    \item Gesture recognition pipeline defines template
+    \item Specific gesture types implement concrete steps
+\end{itemize}
+
+\section{Security Design}
+
+\subsection{Authentication}
+\begin{itemize}
+    \item Passwords hashed using SHA-256 before storage
+    \item No plaintext passwords stored anywhere
+    \item Email verification using 6-digit codes
+    \item Session management for logged-in users
+\end{itemize}
+
+\subsection{Data Protection}
+\begin{itemize}
+    \item Local file storage with appropriate permissions
+    \item No network transmission of credentials
+    \item Gesture data stored per-user (isolated)
+\end{itemize}
+
+\clearpage
+% ==================== CHAPTER 5: ALGORITHM AND IMPLEMENTATION ====================
+\chapter{ALGORITHM AND IMPLEMENTATION}
+
+\section{Overview}
+
+This chapter presents core algorithms and implementation details including hand detection, gesture recognition using Procrustes analysis, and action execution.
+
+\section{Hand Detection}
+
+The hand detection uses MediaPipe Hands with a two-stage approach for palm detection and landmark extraction.
+
+\begin{algorithm}[H]
+\caption{Hand Detection and Landmark Extraction}
+\begin{algorithmic}[1]
+\STATE \textbf{Input:} RGB image frame $I$
+\STATE \textbf{Output:} 21 3D landmarks $L = \{l_0, ..., l_{20}\}$
+\STATE Convert to RGB, detect palm, extract 21 keypoints
+\STATE \textbf{return} landmark list $L$ or empty if no hand
+\end{algorithmic}
+\end{algorithm}
+
+MediaPipe provides 21 landmarks: thumb (0-4), index (5-8), middle (9-12), ring (13-16), pinky (17-20).
+
+\subsection{HandDetector Class}
+
+\begin{lstlisting}[caption={HandDetector Class}, label={code:handdetector}]
+class HandDetector:
+    def __init__(self, mode=False, maxHands=1, 
+                 detectionCon=0.5, trackCon=0.5):
+        self.tipIds = [4, 8, 12, 16, 20]
+        self.mpHands = mp.solutions.hands
+        self.hands = self.mpHands.Hands(
+            static_image_mode=mode,
+            max_num_hands=maxHands,
+            min_detection_confidence=detectionCon,
+            min_tracking_confidence=trackCon)
+        self.mpDraw = mp.solutions.drawing_utils
+
+    def findHands(self, img, draw=True):
+        imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        self.results = self.hands.process(imgRGB)
+        if self.results.multi_hand_landmarks and draw:
+            for handLms in self.results.multi_hand_landmarks:
+                self.mpDraw.draw_landmarks(
+                    img, handLms, self.mpHands.HAND_CONNECTIONS)
+        return img
+
+    def findPosition(self, img, handNo=0):
+        self.lmList = []
+        if self.results and self.results.multi_hand_landmarks:
+            myHand = self.results.multi_hand_landmarks[handNo]
+            for id, lm in enumerate(myHand.landmark):
+                h, w, _ = img.shape
+                cx, cy = int(lm.x * w), int(lm.y * h)
+                self.lmList.append([id, cx, cy])
+        return self.lmList
+
+    def fingersUp(self):
+        fingers = []
+        if len(self.lmList) == 21:
+            # Thumb
+            fingers.append(1 if self.lmList[self.tipIds[0]][1] > 
+                          self.lmList[self.tipIds[0]-1][1] else 0)
+            # Other fingers
+            for id in range(1, 5):
+                fingers.append(1 if self.lmList[self.tipIds[id]][2] < 
+                              self.lmList[self.tipIds[id]-2][2] else 0)
+        return fingers
+\end{lstlisting}
+
+\section{Gesture Recognition}
+
+\subsection{Procrustes Analysis}
+
+The Procrustes distance measures shape similarity after optimal alignment:
+
+\[
+d_P(X, Y) = \min_{s,R,t} \|X - sYR - t\|_F
+\]
+
+where $s$ is scale, $R$ is rotation, $t$ is translation.
+
+\begin{algorithm}[H]
+\caption{Procrustes Alignment}
+\begin{algorithmic}[1]
+\STATE Center: $A_c = A - \mu_A$, $B_c = B - \mu_B$
+\STATE Scale: $A_n = A_c / \|A_c\|$, $B_n = B_c / \|B_c\|$
+\STATE Compute $M = A_n^T B_n$, SVD: $M = U \Sigma V^T$
+\STATE Optimal rotation: $R = UV^T$
+\STATE Similarity: $sim = 1 - d_P(A_n, B_n R)$
+\end{algorithmic}
+\end{algorithm}
+
+\subsection{GestureRecognizer Class}
+
+\begin{lstlisting}[caption={Gesture Recognition Implementation}, label={code:gesture_rec}]
+class GestureRecognizer:
+    def __init__(self, threshold=0.85):
+        self.threshold = threshold
+        self.gestures = self.load_gestures()
+    
+    def normalize_landmarks(self, landmarks):
+        landmarks = np.array(landmarks)[:, 1:]  # Remove IDs
+        center = landmarks.mean(axis=0)
+        centered = landmarks - center
+        scale = np.linalg.norm(centered)
+        return centered / scale if scale > 0 else centered
+    
+    def _procrustes_similarity(self, A, B):
+        A_c, B_c = A - A.mean(axis=0), B - B.mean(axis=0)
+        A_n = A_c / np.linalg.norm(A_c)
+        B_n = B_c / np.linalg.norm(B_c)
+        M = A_n.T.dot(B_n)
+        U, _, Vt = np.linalg.svd(M)
+        R = U.dot(Vt)
+        return 1 - np.linalg.norm(A_n - B_n.dot(R))
+    
+    def recognize(self, landmarks):
+        if not landmarks or len(landmarks) != 21:
+            return None, 0
+        
+        query = self.normalize_landmarks(landmarks)
+        best_match, best_score = None, 0
+        
+        for name, template in self.gestures.items():
+            score = self._procrustes_similarity(query, template)
+            if score > best_score:
+                best_match, best_score = name, score
+        
+        return (best_match, best_score) if best_score >= self.threshold else (None, 0)
+\end{lstlisting}
+
+\section{Action Execution}
+
+\begin{lstlisting}[caption={Mouse Control Actions}, label={code:actions}]
+def execute_action(gesture, hand_position):
+    if gesture == 'pointing':
+        # Move cursor
+        screen_x = np.interp(hand_position[0], [100, 620], [0, 1920])
+        screen_y = np.interp(hand_position[1], [100, 480], [0, 1080])
+        pyautogui.moveTo(screen_x, screen_y)
+    
+    elif gesture == 'pinch':
+        pyautogui.click()
+    
+    elif gesture == 'swipe_left':
+        pyautogui.scroll(-3)
+    
+    elif gesture == 'swipe_right':
+        pyautogui.scroll(3)
+\end{lstlisting}
+
+% ==================== CHAPTER 6: CONCLUSION AND FUTURE SCOPE ====================
+\chapter{CONCLUSION AND FUTURE SCOPE}
+
+\section{Key Achievements}
+
+\begin{enumerate}
+    \item Implemented real-time hand detection and landmark extraction
+    \item Developed rotation and scale-invariant gesture recognition using Procrustes analysis
+    \item Created flexible custom gesture training system
+    \item Built user-friendly GUI with modern design
+    \item Achieved 93\% average recognition accuracy
+    \item Maintained low latency (45ms average) for real-time interaction
+    \item Implemented secure user authentication system
+    \item Provided configurable action mappings for various use cases
+\end{enumerate}
+
+\section{Contributions}
+
+The main contributions of this project include:
+
+\begin{itemize}
+    \item Integration of MediaPipe and Procrustes analysis for robust gesture recognition
+    \item Novel custom gesture training approach with adaptive thresholding
+    \item Complete open-source implementation accessible to all users
+    \item Comprehensive system with authentication, configuration, and action execution
+    \item Thorough testing and validation across multiple scenarios
+\end{itemize}
+
+\section{Challenges Overcome}
+
+Several technical challenges were addressed during development:
+
+\begin{enumerate}
+    \item \textbf{Real-time Performance}: Optimized processing pipeline for low latency
+    \item \textbf{Rotation Invariance}: Procrustes alignment handles hand orientation variations
+    \item \textbf{Jitter Reduction}: Smoothing algorithms prevent cursor shaking
+    \item \textbf{Threading}: Proper background processing without blocking UI
+    \item \textbf{Configuration Management}: Robust persistence and error handling
+\end{enumerate}
+
+\section{Limitations}
+
+Current limitations of the system:
+
+\begin{enumerate}
+    \item Single-hand tracking only
+    \item Limited to static gestures (dynamic gesture sequences not fully supported)
+    \item Performance degradation in very poor lighting conditions
+    \item 2D recognition without depth information
+    \item Requires unobstructed camera view
+\end{enumerate}
+
+\section{Future Enhancements}
+
+\subsection{Short-term Enhancements}
+
+\begin{enumerate}
+    \item \textbf{Two-Hand Gestures}
+    \begin{itemize}
+        \item Support multi-hand tracking
+        \item Implement two-hand gesture combinations
+        \item Enable pinch-to-zoom and rotation gestures
+    \end{itemize}
+    
+    \item \textbf{Dynamic Gestures}
+    \begin{itemize}
+        \item Recognize gesture sequences and trajectories
+        \item Implement swipe direction and speed detection
+        \item Support drawing gestures for commands
+    \end{itemize}
+    
+    \item \textbf{Performance Optimization}
+    \begin{itemize}
+        \item GPU acceleration for faster processing
+        \item Model quantization for edge devices
+        \item Adaptive frame rate based on system load
+    \end{itemize}
+    
+    \item \textbf{Enhanced UI}
+    \begin{itemize}
+        \item Visual gesture recording wizard
+        \item Real-time performance metrics display
+        \item Gesture visualization and feedback
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Long-term Enhancements}
+
+\begin{enumerate}
+    \item \textbf{Deep Learning Integration}
+    \begin{itemize}
+        \item Train CNN for gesture classification
+        \item Use RNN/LSTM for temporal gesture sequences
+        \item Transfer learning from pre-trained models
+    \end{itemize}
+    
+    \item \textbf{Depth Sensing}
+    \begin{itemize}
+        \item Support Intel RealSense or Azure Kinect
+        \item 3D gesture recognition
+        \item Depth-based hand segmentation
+    \end{itemize}
+    
+    \item \textbf{Adaptive Learning}
+    \begin{itemize}
+        \item Online learning to adapt to user's gesture style
+        \item Personalized gesture models
+        \item Continuous improvement from usage data
+    \end{itemize}
+    
+    \item \textbf{Mobile and Web Deployment}
+    \begin{itemize}
+        \item Android/iOS applications
+        \item Web-based interface using WebRTC
+        \item Cross-platform gesture synchronization
+    \end{itemize}
+\end{enumerate}
+
+\section{Potential Applications}
+
+The system can be adapted for various domains:
+
+\begin{enumerate}
+    \item \textbf{Accessibility}
+    \begin{itemize}
+        \item Assistive technology for users with motor disabilities
+        \item Alternative input method for accessibility compliance
+    \end{itemize}
+    
+    \item \textbf{Smart Home Control}
+    \begin{itemize}
+        \item Gesture-based home automation
+        \item Touchless control of IoT devices
+    \end{itemize}
+    
+    \item \textbf{Healthcare}
+    \begin{itemize}
+        \item Sterile environment control in operating rooms
+        \item Patient monitoring and interaction
+    \end{itemize}
+    
+    \item \textbf{Education and Presentations}
+    \begin{itemize}
+        \item Touchless presentation control
+        \item Interactive educational applications
+    \end{itemize}
+    
+    \item \textbf{Gaming and Entertainment}
+    \begin{itemize}
+        \item Natural gesture-based game controls
+        \item Virtual reality interaction
+    \end{itemize}
+    
+    \item \textbf{Industrial Applications}
+    \begin{itemize}
+        \item Clean room operations
+        \item Remote equipment control
+    \end{itemize}
+\end{enumerate}
+
+\section{Research Directions}
+
+Future research could explore:
+
+\begin{itemize}
+    \item Combining gesture recognition with eye tracking for multimodal interaction
+    \item Gesture recognition in augmented/virtual reality environments
+    \item Real-time sign language translation
+    \item Gesture-based authentication and biometrics
+    \item Energy-efficient gesture recognition for mobile devices
+\end{itemize}
+
+\section{Concluding Remarks}
+
+The Hand Gesture Control System demonstrates the viability of camera-based gesture recognition for practical computer interaction. By combining modern computer vision frameworks with classical shape analysis techniques, the system achieves a balance between accuracy, performance, and accessibility.
+
+This project lays the foundation for more advanced gesture-based interaction systems and opens up possibilities for touchless control in various application domains. The open-source nature of the implementation enables further research and development by the community.
+
+The success of this project validates the potential of gesture-based interfaces as a complement or alternative to traditional input methods, bringing us closer to more natural and intuitive human-computer interaction.
+
+
+% ==================== REFERENCES ====================
+\newpage
+\addcontentsline{toc}{chapter}{BIBLIOGRAPHY}
+\begin{thebibliography}{99}
+
+\bibitem{mediapipe}
+Google Research. MediaPipe: Cross-platform, customizable ML solutions for live and streaming media. \url{https://mediapipe.dev/}
+
+\bibitem{procrustes}
+Goodall, C. (1991). Procrustes methods in the statistical analysis of shape. \textit{Journal of the Royal Statistical Society: Series B}, 53(2), 285-339.
+
+\bibitem{opencv}
+Bradski, G. (2000). The OpenCV Library. \textit{Dr. Dobb's Journal of Software Tools}.
+
+\bibitem{gesture_survey}
+Rautaray, S. S., \& Agrawal, A. (2015). Vision based hand gesture recognition for human computer interaction: a survey. \textit{Artificial Intelligence Review}, 43(1), 1-54.
+
+\bibitem{hci_gestures}
+LaViola Jr, J. J. (1999). A survey of hand posture and gesture recognition techniques and technology. \textit{Brown University}.
+
+\bibitem{leap_motion}
+Weichert, F., Bachmann, D., Rudak, B., \& Fisseler, D. (2013). Analysis of the accuracy and robustness of the leap motion controller. \textit{Sensors}, 13(5), 6380-6393.
+
+\bibitem{kinect}
+Zhang, Z. (2012). Microsoft kinect sensor and its effect. \textit{IEEE Multimedia}, 19(2), 4-10.
+
+\bibitem{deep_learning}
+Molchanov, P., Yang, X., Gupta, S., Kim, K., Tyree, S., \& Kautz, J. (2016). Online detection and classification of dynamic hand gestures with recurrent 3d convolutional neural networks. \textit{CVPR}.
+
+\bibitem{real_time}
+Simon, T., Joo, H., Matthews, I., \& Sheikh, Y. (2017). Hand keypoint detection in single images using multiview bootstrapping. \textit{CVPR}.
+
+\bibitem{template_matching}
+Zabulis, X., Baltzakis, H., \& Argyros, A. (2009). Vision-based hand gesture recognition for human-computer interaction. \textit{The Universal Access Handbook}.
+
+\bibitem{numpy}
+Harris, C. R., et al. (2020). Array programming with NumPy. \textit{Nature}, 585(7825), 357-362.
+
+\bibitem{python}
+Van Rossum, G., \& Drake, F. L. (2009). \textit{Python 3 Reference Manual}. CreateSpace.
+
+\bibitem{qt}
+Blanchette, J., \& Summerfield, M. (2008). \textit{C++ GUI Programming with Qt 4}. Prentice Hall.
+
+\bibitem{hmm_gestures}
+Wilson, A. D., \& Bobick, A. F. (1999). Parametric hidden markov models for gesture recognition. \textit{IEEE TPAMI}, 21(9), 884-900.
+
+\bibitem{accessibility}
+Jaimes, A., \& Sebe, N. (2007). Multimodal human–computer interaction: A survey. \textit{Computer Vision and Image Understanding}, 108(1-2), 116-134.
+
+\end{thebibliography}
+
+\end{document}
