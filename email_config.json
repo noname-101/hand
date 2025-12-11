@@ -1,0 +1,7 @@
+{
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "smtp_user": "usrnm13570",
+    "smtp_pass": "prsz sjbv rbmp neth",
+    "smtp_tls": true
+}

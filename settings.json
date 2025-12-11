@@ -1,0 +1,8 @@
+{
+  "smoothening": 7,
+  "click_delay_ms": 300,
+  "click_distance_percentage": 8,
+  "left_click_distance_percentage": 10,
+  "right_click_distance_percentage": 50,
+  "dark_mode": true
+}

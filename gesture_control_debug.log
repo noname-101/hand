@@ -1,0 +1,629 @@
+2025-11-30 23:25:39,418 DEBUG: Login attempt for user='hi'
+2025-11-30 23:25:39,420 DEBUG: Loaded users file 'users.json' successfully; user count=1
+2025-11-30 23:25:39,420 DEBUG: Stored entry for 'hi' is dict; keys=['password', 'email', 'verified']
+2025-11-30 23:30:05,269 DEBUG: Login attempt for user='hi'
+2025-11-30 23:30:05,269 DEBUG: Loaded users file 'users.json' successfully; user count=1
+2025-11-30 23:30:05,270 DEBUG: Stored entry for 'hi' is dict; keys=['password', 'email', 'verified']
+2025-11-30 23:30:05,270 DEBUG: User 'hi' provided correct password and is verified; logging in
+2025-11-30 23:36:49,025 DEBUG: Left click check: gesture=move, mapped=move, length=150.57, threshold=21, cooldown=1764526008.924s
+2025-11-30 23:36:49,025 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:49,297 DEBUG: Left click check: gesture=move, mapped=move, length=131.53, threshold=21, cooldown=1764526009.195s
+2025-11-30 23:36:49,297 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:49,614 DEBUG: Left click check: gesture=move, mapped=move, length=173.69, threshold=23, cooldown=1764526009.512s
+2025-11-30 23:36:49,615 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:49,929 DEBUG: Left click check: gesture=move, mapped=move, length=175.57, threshold=24, cooldown=1764526009.825s
+2025-11-30 23:36:49,929 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:50,241 DEBUG: Left click check: gesture=move, mapped=move, length=183.44, threshold=24, cooldown=1764526010.140s
+2025-11-30 23:36:50,241 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:50,558 DEBUG: Left click check: gesture=move, mapped=move, length=189.28, threshold=26, cooldown=1764526010.456s
+2025-11-30 23:36:50,558 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:50,874 DEBUG: Left click check: gesture=move, mapped=move, length=191.85, threshold=26, cooldown=1764526010.773s
+2025-11-30 23:36:50,874 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:51,207 DEBUG: Left click check: gesture=move, mapped=move, length=192.82, threshold=26, cooldown=1764526011.102s
+2025-11-30 23:36:51,207 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:51,531 DEBUG: Left click check: gesture=move, mapped=move, length=187.98, threshold=26, cooldown=1764526011.430s
+2025-11-30 23:36:51,531 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:51,856 DEBUG: Left click check: gesture=move, mapped=move, length=186.34, threshold=26, cooldown=1764526011.755s
+2025-11-30 23:36:51,857 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:52,199 DEBUG: Left click check: gesture=move, mapped=move, length=188.09, threshold=26, cooldown=1764526012.096s
+2025-11-30 23:36:52,200 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:52,548 DEBUG: Left click check: gesture=move, mapped=move, length=180.71, threshold=26, cooldown=1764526012.446s
+2025-11-30 23:36:52,548 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:52,888 DEBUG: Left click check: gesture=move, mapped=move, length=184.84, threshold=26, cooldown=1764526012.786s
+2025-11-30 23:36:52,889 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:53,234 DEBUG: Left click check: gesture=move, mapped=move, length=184.82, threshold=25, cooldown=1764526013.133s
+2025-11-30 23:36:53,235 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:53,587 DEBUG: Left click check: gesture=move, mapped=move, length=183.20, threshold=25, cooldown=1764526013.484s
+2025-11-30 23:36:53,588 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:53,948 DEBUG: Left click check: gesture=move, mapped=move, length=184.95, threshold=25, cooldown=1764526013.847s
+2025-11-30 23:36:53,949 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:54,309 DEBUG: Left click check: gesture=move, mapped=move, length=182.20, threshold=25, cooldown=1764526014.207s
+2025-11-30 23:36:54,310 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:54,660 DEBUG: Left click check: gesture=move, mapped=move, length=175.73, threshold=25, cooldown=1764526014.559s
+2025-11-30 23:36:54,661 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:55,064 DEBUG: Left click check: gesture=move, mapped=move, length=180.62, threshold=25, cooldown=1764526014.963s
+2025-11-30 23:36:55,064 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:55,457 DEBUG: Left click check: gesture=move, mapped=move, length=180.68, threshold=25, cooldown=1764526015.355s
+2025-11-30 23:36:55,458 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:55,831 DEBUG: Left click check: gesture=move, mapped=move, length=180.24, threshold=25, cooldown=1764526015.729s
+2025-11-30 23:36:55,832 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:56,228 DEBUG: Left click check: gesture=move, mapped=move, length=174.75, threshold=25, cooldown=1764526016.128s
+2025-11-30 23:36:56,228 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:56,592 DEBUG: Left click check: gesture=move, mapped=move, length=183.85, threshold=24, cooldown=1764526016.491s
+2025-11-30 23:36:56,593 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:58,087 DEBUG: Left click check: gesture=move, mapped=move, length=219.23, threshold=25, cooldown=1764526017.986s
+2025-11-30 23:36:58,087 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:58,371 DEBUG: Left click check: gesture=move, mapped=move, length=214.22, threshold=25, cooldown=1764526018.266s
+2025-11-30 23:36:58,371 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:58,653 DEBUG: Left click check: gesture=move, mapped=move, length=215.54, threshold=25, cooldown=1764526018.551s
+2025-11-30 23:36:58,653 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:59,044 DEBUG: Left click check: gesture=move, mapped=move, length=216.91, threshold=25, cooldown=1764526018.939s
+2025-11-30 23:36:59,044 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:59,444 DEBUG: Left click check: gesture=move, mapped=move, length=211.62, threshold=25, cooldown=1764526019.342s
+2025-11-30 23:36:59,445 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:36:59,822 DEBUG: Left click check: gesture=move, mapped=move, length=210.92, threshold=25, cooldown=1764526019.721s
+2025-11-30 23:36:59,822 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:00,209 DEBUG: Left click check: gesture=move, mapped=move, length=212.98, threshold=24, cooldown=1764526020.108s
+2025-11-30 23:37:00,210 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:00,595 DEBUG: Left click check: gesture=move, mapped=move, length=211.29, threshold=24, cooldown=1764526020.493s
+2025-11-30 23:37:00,596 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:00,981 DEBUG: Left click check: gesture=move, mapped=move, length=211.22, threshold=24, cooldown=1764526020.879s
+2025-11-30 23:37:00,982 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:18,504 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=127.47, threshold=19, cooldown=1764526038.504s
+2025-11-30 23:37:18,505 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:18,605 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=109.56, threshold=19, cooldown=1764526038.605s
+2025-11-30 23:37:18,605 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:18,704 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=116.09, threshold=19, cooldown=1764526038.701s
+2025-11-30 23:37:18,704 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:18,803 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=107.91, threshold=19, cooldown=1764526038.803s
+2025-11-30 23:37:18,804 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:18,913 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=104.20, threshold=19, cooldown=1764526038.913s
+2025-11-30 23:37:18,914 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:19,014 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=107.94, threshold=19, cooldown=1764526039.014s
+2025-11-30 23:37:19,014 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:19,131 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=104.69, threshold=19, cooldown=1764526039.132s
+2025-11-30 23:37:19,132 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:20,017 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=95.51, threshold=20, cooldown=1764526040.016s
+2025-11-30 23:37:20,017 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:20,116 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=96.77, threshold=19, cooldown=1764526040.114s
+2025-11-30 23:37:20,117 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:20,215 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=95.82, threshold=19, cooldown=1764526040.215s
+2025-11-30 23:37:20,216 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:20,314 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=93.01, threshold=19, cooldown=1764526040.314s
+2025-11-30 23:37:20,315 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:20,410 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=97.51, threshold=19, cooldown=1764526040.410s
+2025-11-30 23:37:20,413 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:20,512 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=96.54, threshold=19, cooldown=1764526040.512s
+2025-11-30 23:37:20,512 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:20,580 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=94.37, threshold=19, cooldown=1764526040.580s
+2025-11-30 23:37:20,581 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:20,657 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=98.86, threshold=19, cooldown=1764526040.658s
+2025-11-30 23:37:20,658 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:20,719 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=98.15, threshold=19, cooldown=1764526040.717s
+2025-11-30 23:37:20,720 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:21,867 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=97.01, threshold=19, cooldown=1764526041.866s
+2025-11-30 23:37:21,867 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:21,962 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=95.13, threshold=19, cooldown=1764526041.962s
+2025-11-30 23:37:21,963 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:22,067 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=96.13, threshold=19, cooldown=1764526042.066s
+2025-11-30 23:37:22,067 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:22,162 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=97.19, threshold=19, cooldown=1764526042.162s
+2025-11-30 23:37:22,163 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:23,111 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=97.08, threshold=19, cooldown=1764526043.111s
+2025-11-30 23:37:23,111 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:23,167 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=94.41, threshold=19, cooldown=1764526043.167s
+2025-11-30 23:37:23,168 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:23,238 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=93.94, threshold=19, cooldown=1764526043.238s
+2025-11-30 23:37:23,238 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:23,295 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=90.14, threshold=19, cooldown=1764526043.293s
+2025-11-30 23:37:23,295 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:23,356 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=85.45, threshold=19, cooldown=1764526043.356s
+2025-11-30 23:37:23,356 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:23,413 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=87.13, threshold=19, cooldown=1764526043.413s
+2025-11-30 23:37:23,413 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:23,471 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=87.42, threshold=19, cooldown=1764526043.472s
+2025-11-30 23:37:23,471 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:23,528 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=93.48, threshold=19, cooldown=1764526043.529s
+2025-11-30 23:37:23,529 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:23,587 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=94.15, threshold=19, cooldown=1764526043.587s
+2025-11-30 23:37:23,587 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:23,647 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=83.49, threshold=19, cooldown=1764526043.647s
+2025-11-30 23:37:23,647 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:23,704 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=87.66, threshold=19, cooldown=1764526043.704s
+2025-11-30 23:37:23,704 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:23,760 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=88.01, threshold=19, cooldown=1764526043.760s
+2025-11-30 23:37:23,760 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:23,821 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=87.09, threshold=19, cooldown=1764526043.821s
+2025-11-30 23:37:23,822 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:23,914 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=85.44, threshold=19, cooldown=1764526043.914s
+2025-11-30 23:37:23,915 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:37:24,908 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=61.68, threshold=22, cooldown=1764526044.905s
+2025-11-30 23:37:24,908 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:24,997 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=52.39, threshold=22, cooldown=1764526044.995s
+2025-11-30 23:37:24,997 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:25,054 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=50.70, threshold=22, cooldown=1764526045.055s
+2025-11-30 23:37:25,055 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:25,112 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=47.17, threshold=22, cooldown=1764526045.113s
+2025-11-30 23:37:25,112 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:25,170 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=38.28, threshold=22, cooldown=1764526045.171s
+2025-11-30 23:37:25,171 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:25,226 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=22.36, threshold=22, cooldown=1764526045.225s
+2025-11-30 23:37:25,227 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:25,284 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=22.36, threshold=21, cooldown=1764526045.285s
+2025-11-30 23:37:25,285 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:25,343 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=21.95, threshold=21, cooldown=1764526045.343s
+2025-11-30 23:37:25,343 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:25,401 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=23.32, threshold=21, cooldown=1764526045.401s
+2025-11-30 23:37:25,402 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:25,460 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=28.64, threshold=21, cooldown=1764526045.459s
+2025-11-30 23:37:25,460 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:25,516 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=45.88, threshold=22, cooldown=1764526045.516s
+2025-11-30 23:37:25,516 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:25,574 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=45.31, threshold=22, cooldown=1764526045.574s
+2025-11-30 23:37:25,574 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:25,631 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=60.44, threshold=22, cooldown=1764526045.630s
+2025-11-30 23:37:25,631 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:25,689 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=62.82, threshold=22, cooldown=1764526045.689s
+2025-11-30 23:37:25,690 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:25,746 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=62.82, threshold=22, cooldown=1764526045.747s
+2025-11-30 23:37:25,746 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:25,802 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=57.01, threshold=22, cooldown=1764526045.803s
+2025-11-30 23:37:25,802 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:25,860 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=55.79, threshold=22, cooldown=1764526045.861s
+2025-11-30 23:37:25,860 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:25,918 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=23.02, threshold=22, cooldown=1764526045.917s
+2025-11-30 23:37:25,918 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:25,982 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=52.20, threshold=21, cooldown=1764526045.981s
+2025-11-30 23:37:25,982 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:26,046 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=50.29, threshold=21, cooldown=1764526046.046s
+2025-11-30 23:37:26,046 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:26,759 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=26.40, threshold=22, cooldown=1764526046.759s
+2025-11-30 23:37:26,760 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:28,344 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=32.65, threshold=23, cooldown=1764526048.344s
+2025-11-30 23:37:28,345 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:28,454 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=73.44, threshold=22, cooldown=1764526048.453s
+2025-11-30 23:37:28,454 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:28,565 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=76.42, threshold=22, cooldown=1764526048.565s
+2025-11-30 23:37:28,565 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:29,426 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=124.91, threshold=22, cooldown=1764526049.426s
+2025-11-30 23:37:29,427 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:29,511 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=125.40, threshold=24, cooldown=1764526049.510s
+2025-11-30 23:37:29,511 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:29,621 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=33.62, threshold=23, cooldown=1764526049.619s
+2025-11-30 23:37:29,621 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:29,702 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=32.20, threshold=23, cooldown=1764526049.701s
+2025-11-30 23:37:29,702 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:29,787 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=28.84, threshold=23, cooldown=1764526049.787s
+2025-11-30 23:37:29,787 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:29,838 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=28.02, threshold=23, cooldown=1764526049.839s
+2025-11-30 23:37:29,838 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:29,897 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=34.00, threshold=23, cooldown=1764526049.897s
+2025-11-30 23:37:29,898 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:29,959 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=85.44, threshold=23, cooldown=1764526049.959s
+2025-11-30 23:37:29,959 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:30,024 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=115.43, threshold=24, cooldown=1764526050.024s
+2025-11-30 23:37:30,025 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:30,088 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=45.18, threshold=23, cooldown=1764526050.088s
+2025-11-30 23:37:30,088 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:30,150 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=46.62, threshold=23, cooldown=1764526050.151s
+2025-11-30 23:37:30,151 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:30,212 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=26.93, threshold=22, cooldown=1764526050.212s
+2025-11-30 23:37:30,212 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:30,274 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=80.23, threshold=23, cooldown=1764526050.273s
+2025-11-30 23:37:30,274 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:30,378 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=97.31, threshold=23, cooldown=1764526050.378s
+2025-11-30 23:37:30,378 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:30,462 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=99.16, threshold=23, cooldown=1764526050.460s
+2025-11-30 23:37:30,462 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:30,554 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=27.78, threshold=23, cooldown=1764526050.553s
+2025-11-30 23:37:30,555 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:30,642 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=48.76, threshold=23, cooldown=1764526050.643s
+2025-11-30 23:37:30,642 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:30,726 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=89.55, threshold=24, cooldown=1764526050.724s
+2025-11-30 23:37:30,726 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:30,785 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=35.85, threshold=23, cooldown=1764526050.785s
+2025-11-30 23:37:30,786 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:37:30,839 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=57.87, threshold=24, cooldown=1764526050.840s
+2025-11-30 23:37:30,840 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:06,952 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=106.83px, percent=42.08%, thr_pct=8%, cooldown=1764526446.952s
+2025-11-30 23:44:06,956 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:44:07,057 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=91.53px, percent=36.69%, thr_pct=8%, cooldown=1764526447.057s
+2025-11-30 23:44:07,058 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:44:07,154 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=76.55px, percent=31.63%, thr_pct=8%, cooldown=1764526447.155s
+2025-11-30 23:44:07,155 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:44:07,224 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=74.89px, percent=31.04%, thr_pct=8%, cooldown=1764526447.224s
+2025-11-30 23:44:07,225 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:44:07,296 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=79.03px, percent=32.68%, thr_pct=8%, cooldown=1764526447.295s
+2025-11-30 23:44:07,296 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:44:07,368 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=87.46px, percent=35.67%, thr_pct=8%, cooldown=1764526447.369s
+2025-11-30 23:44:07,370 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:44:07,439 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=89.27px, percent=36.44%, thr_pct=8%, cooldown=1764526447.439s
+2025-11-30 23:44:07,440 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:44:07,508 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=87.86px, percent=35.95%, thr_pct=8%, cooldown=1764526447.507s
+2025-11-30 23:44:07,510 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:44:08,207 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=87.11px, percent=35.38%, thr_pct=8%, cooldown=1764526448.208s
+2025-11-30 23:44:08,209 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:44:08,307 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=82.13px, percent=34.11%, thr_pct=8%, cooldown=1764526448.308s
+2025-11-30 23:44:08,309 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:44:08,403 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=80.72px, percent=33.52%, thr_pct=8%, cooldown=1764526448.404s
+2025-11-30 23:44:08,404 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:44:08,473 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=79.25px, percent=32.91%, thr_pct=8%, cooldown=1764526448.474s
+2025-11-30 23:44:08,474 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:44:08,542 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=79.98px, percent=33.44%, thr_pct=8%, cooldown=1764526448.541s
+2025-11-30 23:44:08,542 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:44:08,611 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=75.69px, percent=31.70%, thr_pct=8%, cooldown=1764526448.611s
+2025-11-30 23:44:08,612 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:44:08,681 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=74.97px, percent=31.50%, thr_pct=8%, cooldown=1764526448.681s
+2025-11-30 23:44:08,682 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:44:08,749 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=80.71px, percent=33.41%, thr_pct=8%, cooldown=1764526448.750s
+2025-11-30 23:44:08,750 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:44:08,815 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=81.25px, percent=32.72%, thr_pct=8%, cooldown=1764526448.816s
+2025-11-30 23:44:08,816 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:44:09,763 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=79.12px, percent=28.50%, thr_pct=8%, cooldown=1764526449.763s
+2025-11-30 23:44:09,765 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:09,878 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=80.96px, percent=28.96%, thr_pct=8%, cooldown=1764526449.877s
+2025-11-30 23:44:09,880 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:09,961 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=24.19px, percent=8.93%, thr_pct=8%, cooldown=1764526449.961s
+2025-11-30 23:44:09,962 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:10,018 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=21.95px, percent=8.20%, thr_pct=8%, cooldown=1764526450.019s
+2025-11-30 23:44:10,019 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:10,075 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=19.24px, percent=7.25%, thr_pct=8%, cooldown=1764526450.075s
+2025-11-30 23:44:10,189 DEBUG: LEFT CLICK executed
+2025-11-30 23:44:10,427 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=76.94px, percent=28.66%, thr_pct=8%, cooldown=0.351s
+2025-11-30 23:44:10,428 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:10,523 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=64.12px, percent=24.08%, thr_pct=8%, cooldown=0.448s
+2025-11-30 23:44:10,524 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:14,522 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=74.53px, percent=25.84%, thr_pct=8%, cooldown=4.446s
+2025-11-30 23:44:14,523 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:14,633 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=73.35px, percent=25.70%, thr_pct=8%, cooldown=4.557s
+2025-11-30 23:44:14,634 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:14,721 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=80.65px, percent=27.21%, thr_pct=8%, cooldown=4.646s
+2025-11-30 23:44:14,722 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:14,771 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=88.23px, percent=29.36%, thr_pct=8%, cooldown=4.696s
+2025-11-30 23:44:14,772 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:14,830 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=93.30px, percent=31.22%, thr_pct=8%, cooldown=4.754s
+2025-11-30 23:44:14,831 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:14,888 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=91.09px, percent=30.62%, thr_pct=8%, cooldown=4.813s
+2025-11-30 23:44:14,889 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:14,946 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=96.57px, percent=32.42%, thr_pct=8%, cooldown=4.871s
+2025-11-30 23:44:14,947 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:15,007 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=98.49px, percent=32.83%, thr_pct=8%, cooldown=4.932s
+2025-11-30 23:44:15,008 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:15,069 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=96.84px, percent=32.40%, thr_pct=8%, cooldown=4.994s
+2025-11-30 23:44:15,070 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:15,127 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=95.51px, percent=32.08%, thr_pct=8%, cooldown=5.053s
+2025-11-30 23:44:15,129 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:15,185 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=86.68px, percent=29.42%, thr_pct=8%, cooldown=5.109s
+2025-11-30 23:44:15,186 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:15,244 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=86.33px, percent=29.13%, thr_pct=8%, cooldown=5.169s
+2025-11-30 23:44:15,245 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:15,301 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=64.85px, percent=22.28%, thr_pct=8%, cooldown=5.226s
+2025-11-30 23:44:15,302 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:15,365 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=66.10px, percent=22.66%, thr_pct=8%, cooldown=5.290s
+2025-11-30 23:44:15,365 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:15,425 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=31.76px, percent=11.03%, thr_pct=8%, cooldown=5.350s
+2025-11-30 23:44:15,425 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:15,484 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=27.78px, percent=9.83%, thr_pct=8%, cooldown=5.409s
+2025-11-30 23:44:15,484 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:15,544 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=38.91px, percent=13.70%, thr_pct=8%, cooldown=5.468s
+2025-11-30 23:44:15,545 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:15,599 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=61.10px, percent=21.34%, thr_pct=8%, cooldown=5.523s
+2025-11-30 23:44:15,599 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:15,656 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=70.58px, percent=24.32%, thr_pct=8%, cooldown=5.581s
+2025-11-30 23:44:15,657 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:15,714 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=70.94px, percent=24.38%, thr_pct=8%, cooldown=5.639s
+2025-11-30 23:44:15,715 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:15,768 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=77.25px, percent=26.32%, thr_pct=8%, cooldown=5.693s
+2025-11-30 23:44:15,768 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:15,825 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=78.19px, percent=26.54%, thr_pct=8%, cooldown=5.750s
+2025-11-30 23:44:15,826 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:15,883 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=83.57px, percent=28.61%, thr_pct=8%, cooldown=5.808s
+2025-11-30 23:44:15,884 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:15,942 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=40.31px, percent=14.08%, thr_pct=8%, cooldown=5.866s
+2025-11-30 23:44:15,943 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:16,008 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=24.70px, percent=8.55%, thr_pct=8%, cooldown=5.932s
+2025-11-30 23:44:16,008 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:16,070 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=26.08px, percent=9.20%, thr_pct=8%, cooldown=5.995s
+2025-11-30 23:44:16,071 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:16,120 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=40.31px, percent=14.25%, thr_pct=8%, cooldown=6.046s
+2025-11-30 23:44:16,121 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:16,173 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=40.31px, percent=14.28%, thr_pct=8%, cooldown=6.098s
+2025-11-30 23:44:16,173 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:16,225 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=38.08px, percent=13.41%, thr_pct=8%, cooldown=6.150s
+2025-11-30 23:44:16,226 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:16,280 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=25.06px, percent=8.82%, thr_pct=8%, cooldown=6.204s
+2025-11-30 23:44:16,280 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:16,340 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=25.55px, percent=9.00%, thr_pct=8%, cooldown=6.265s
+2025-11-30 23:44:16,341 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:16,399 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=56.36px, percent=19.67%, thr_pct=8%, cooldown=6.324s
+2025-11-30 23:44:16,400 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:16,457 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=35.36px, percent=12.56%, thr_pct=8%, cooldown=6.381s
+2025-11-30 23:44:16,459 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:16,518 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=22.47px, percent=7.96%, thr_pct=8%, cooldown=6.441s
+2025-11-30 23:44:16,635 DEBUG: LEFT CLICK executed
+2025-11-30 23:44:16,819 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=63.89px, percent=22.41%, thr_pct=8%, cooldown=0.302s
+2025-11-30 23:44:16,820 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:21,551 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=122.48px, percent=39.66%, thr_pct=8%, cooldown=5.032s
+2025-11-30 23:44:21,552 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:21,673 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=28.84px, percent=9.27%, thr_pct=8%, cooldown=5.156s
+2025-11-30 23:44:21,674 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:21,759 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=28.02px, percent=9.08%, thr_pct=8%, cooldown=5.243s
+2025-11-30 23:44:21,760 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:21,811 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=30.41px, percent=9.74%, thr_pct=8%, cooldown=5.294s
+2025-11-30 23:44:21,811 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:21,862 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=29.53px, percent=9.47%, thr_pct=8%, cooldown=5.345s
+2025-11-30 23:44:21,862 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:21,925 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=36.25px, percent=11.57%, thr_pct=8%, cooldown=5.408s
+2025-11-30 23:44:21,926 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:21,986 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=35.11px, percent=11.14%, thr_pct=8%, cooldown=5.469s
+2025-11-30 23:44:21,986 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:22,056 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=64.85px, percent=20.37%, thr_pct=8%, cooldown=5.539s
+2025-11-30 23:44:22,057 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:22,121 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=66.10px, percent=20.75%, thr_pct=8%, cooldown=5.604s
+2025-11-30 23:44:22,123 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:22,187 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=73.39px, percent=23.14%, thr_pct=8%, cooldown=5.670s
+2025-11-30 23:44:22,189 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:22,253 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=86.98px, percent=27.51%, thr_pct=8%, cooldown=5.737s
+2025-11-30 23:44:22,254 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:22,317 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=75.24px, percent=23.76%, thr_pct=8%, cooldown=5.801s
+2025-11-30 23:44:22,318 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:22,386 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=76.16px, percent=24.05%, thr_pct=8%, cooldown=5.869s
+2025-11-30 23:44:22,387 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:22,440 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=30.81px, percent=9.70%, thr_pct=8%, cooldown=5.922s
+2025-11-30 23:44:22,440 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:22,500 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=37.22px, percent=11.88%, thr_pct=8%, cooldown=5.983s
+2025-11-30 23:44:22,501 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:22,560 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=36.72px, percent=11.83%, thr_pct=8%, cooldown=6.044s
+2025-11-30 23:44:22,561 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:22,663 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=40.31px, percent=13.01%, thr_pct=8%, cooldown=6.147s
+2025-11-30 23:44:22,665 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:22,777 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=30.53px, percent=9.70%, thr_pct=8%, cooldown=6.260s
+2025-11-30 23:44:22,778 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:22,876 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=65.76px, percent=21.04%, thr_pct=8%, cooldown=6.357s
+2025-11-30 23:44:22,877 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:22,950 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=67.12px, percent=21.50%, thr_pct=8%, cooldown=6.433s
+2025-11-30 23:44:22,951 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:23,009 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=36.24px, percent=11.60%, thr_pct=8%, cooldown=6.493s
+2025-11-30 23:44:23,011 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:23,068 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=70.21px, percent=22.16%, thr_pct=8%, cooldown=6.551s
+2025-11-30 23:44:23,068 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:23,128 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=16.12px, percent=5.21%, thr_pct=8%, cooldown=6.612s
+2025-11-30 23:44:23,247 DEBUG: LEFT CLICK executed
+2025-11-30 23:44:23,508 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=23.09px, percent=7.37%, thr_pct=8%, cooldown=0.379s
+2025-11-30 23:44:23,617 DEBUG: LEFT CLICK executed
+2025-11-30 23:44:23,959 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=94.37px, percent=29.92%, thr_pct=8%, cooldown=0.452s
+2025-11-30 23:44:23,960 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:24,043 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=161.77px, percent=51.09%, thr_pct=8%, cooldown=0.535s
+2025-11-30 23:44:24,044 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:24,102 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=159.21px, percent=49.75%, thr_pct=8%, cooldown=0.594s
+2025-11-30 23:44:24,102 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:24,186 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=163.86px, percent=51.62%, thr_pct=8%, cooldown=0.679s
+2025-11-30 23:44:24,188 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:24,283 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=168.72px, percent=52.53%, thr_pct=8%, cooldown=0.776s
+2025-11-30 23:44:24,284 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:24,380 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=159.51px, percent=50.89%, thr_pct=8%, cooldown=0.873s
+2025-11-30 23:44:24,381 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:24,481 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=160.02px, percent=51.22%, thr_pct=8%, cooldown=0.973s
+2025-11-30 23:44:24,482 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:24,579 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=154.35px, percent=50.54%, thr_pct=8%, cooldown=1.071s
+2025-11-30 23:44:24,581 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:24,671 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=155.08px, percent=51.52%, thr_pct=8%, cooldown=1.162s
+2025-11-30 23:44:24,672 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:24,741 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=151.43px, percent=49.22%, thr_pct=8%, cooldown=1.232s
+2025-11-30 23:44:24,741 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:24,808 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=148.38px, percent=47.98%, thr_pct=8%, cooldown=1.301s
+2025-11-30 23:44:24,809 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:24,877 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=145.34px, percent=48.55%, thr_pct=8%, cooldown=1.370s
+2025-11-30 23:44:24,878 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:24,945 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=143.45px, percent=47.46%, thr_pct=8%, cooldown=1.435s
+2025-11-30 23:44:24,946 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:25,013 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=144.27px, percent=47.76%, thr_pct=8%, cooldown=1.504s
+2025-11-30 23:44:25,015 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:25,083 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=144.78px, percent=47.13%, thr_pct=8%, cooldown=1.576s
+2025-11-30 23:44:25,084 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:41,909 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=22.80px, percent=8.30%, thr_pct=10%, cooldown=18.402s
+2025-11-30 23:44:42,022 DEBUG: LEFT CLICK executed
+2025-11-30 23:44:42,232 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=71.84px, percent=26.62%, thr_pct=10%, cooldown=0.322s
+2025-11-30 23:44:42,233 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:42,301 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=71.84px, percent=26.55%, thr_pct=10%, cooldown=0.392s
+2025-11-30 23:44:42,302 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:42,370 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=99.05px, percent=37.66%, thr_pct=10%, cooldown=0.460s
+2025-11-30 23:44:42,371 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:42,436 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=110.37px, percent=41.96%, thr_pct=10%, cooldown=0.526s
+2025-11-30 23:44:42,439 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:42,506 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=110.68px, percent=41.66%, thr_pct=10%, cooldown=0.597s
+2025-11-30 23:44:42,508 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:43,389 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=25.00px, percent=14.49%, thr_pct=10%, cooldown=1.478s
+2025-11-30 23:44:43,390 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:43,486 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=24.76px, percent=14.15%, thr_pct=10%, cooldown=1.576s
+2025-11-30 23:44:43,487 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:43,584 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=20.59px, percent=11.97%, thr_pct=10%, cooldown=1.671s
+2025-11-30 23:44:43,585 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:44:44,750 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=11.70px, percent=7.16%, thr_pct=10%, cooldown=2.839s
+2025-11-30 23:44:44,962 DEBUG: RIGHT CLICK executed
+2025-11-30 23:44:45,058 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=18.68px, percent=10.35%, thr_pct=10%, cooldown=0.310s
+2025-11-30 23:44:45,059 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:44:45,118 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=30.27px, percent=15.23%, thr_pct=10%, cooldown=0.368s
+2025-11-30 23:44:45,118 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:44:45,177 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=27.46px, percent=13.89%, thr_pct=10%, cooldown=0.428s
+2025-11-30 23:44:45,178 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:44:45,234 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=10.00px, percent=5.66%, thr_pct=10%, cooldown=0.486s
+2025-11-30 23:44:45,446 DEBUG: RIGHT CLICK executed
+2025-11-30 23:44:45,566 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=20.10px, percent=11.00%, thr_pct=10%, cooldown=0.331s
+2025-11-30 23:44:45,567 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:44:45,662 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=24.02px, percent=13.12%, thr_pct=10%, cooldown=0.428s
+2025-11-30 23:44:45,663 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:49:05,182 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=27.86px, percent=9.80%, thr_pct=10%, cooldown=1764526745.182s
+2025-11-30 23:49:05,300 DEBUG: LEFT CLICK executed
+2025-11-30 23:49:05,553 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=92.70px, percent=33.69%, thr_pct=10%, cooldown=0.371s
+2025-11-30 23:49:05,554 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:16,695 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=55.17px, percent=26.41%, thr_pct=25%, cooldown=11.512s
+2025-11-30 23:49:16,696 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:49:21,320 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=74.22px, percent=32.73%, thr_pct=25%, cooldown=16.138s
+2025-11-30 23:49:21,321 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:49:21,418 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=73.54px, percent=32.34%, thr_pct=25%, cooldown=16.236s
+2025-11-30 23:49:21,419 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:49:21,512 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=73.16px, percent=31.56%, thr_pct=25%, cooldown=16.330s
+2025-11-30 23:49:21,512 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:49:21,578 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=88.54px, percent=38.36%, thr_pct=25%, cooldown=16.396s
+2025-11-30 23:49:21,580 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:49:21,867 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=97.25px, percent=42.63%, thr_pct=25%, cooldown=16.686s
+2025-11-30 23:49:21,869 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:49:21,964 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=91.44px, percent=39.74%, thr_pct=25%, cooldown=16.782s
+2025-11-30 23:49:21,965 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:49:22,067 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=90.25px, percent=39.20%, thr_pct=25%, cooldown=16.885s
+2025-11-30 23:49:22,069 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:49:22,368 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=37.01px, percent=14.83%, thr_pct=10%, cooldown=17.186s
+2025-11-30 23:49:22,369 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:22,464 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=37.00px, percent=14.82%, thr_pct=10%, cooldown=17.283s
+2025-11-30 23:49:22,466 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:22,569 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=19.21px, percent=7.68%, thr_pct=10%, cooldown=17.386s
+2025-11-30 23:49:22,684 DEBUG: LEFT CLICK executed
+2025-11-30 23:49:23,654 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=61.00px, percent=23.52%, thr_pct=10%, cooldown=1.085s
+2025-11-30 23:49:23,655 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:23,766 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=21.19px, percent=8.21%, thr_pct=10%, cooldown=1.198s
+2025-11-30 23:49:23,882 DEBUG: LEFT CLICK executed
+2025-11-30 23:49:27,048 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=33.54px, percent=12.13%, thr_pct=10%, cooldown=3.282s
+2025-11-30 23:49:27,049 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:27,122 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=29.27px, percent=10.72%, thr_pct=10%, cooldown=3.356s
+2025-11-30 23:49:27,122 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:27,267 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=56.08px, percent=21.10%, thr_pct=10%, cooldown=3.501s
+2025-11-30 23:49:27,268 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:27,340 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=57.14px, percent=21.34%, thr_pct=10%, cooldown=3.574s
+2025-11-30 23:49:27,341 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:28,076 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=49.65px, percent=17.97%, thr_pct=10%, cooldown=4.309s
+2025-11-30 23:49:28,077 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:28,172 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=24.74px, percent=8.95%, thr_pct=10%, cooldown=4.406s
+2025-11-30 23:49:28,276 DEBUG: LEFT CLICK executed
+2025-11-30 23:49:29,055 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=28.64px, percent=10.18%, thr_pct=10%, cooldown=0.883s
+2025-11-30 23:49:29,056 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:29,174 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=51.16px, percent=18.46%, thr_pct=10%, cooldown=1.002s
+2025-11-30 23:49:29,175 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:29,494 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=53.60px, percent=19.64%, thr_pct=10%, cooldown=1.322s
+2025-11-30 23:49:29,496 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:29,604 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=80.41px, percent=29.80%, thr_pct=10%, cooldown=1.433s
+2025-11-30 23:49:29,605 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:30,560 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=25.63px, percent=9.31%, thr_pct=10%, cooldown=2.385s
+2025-11-30 23:49:30,680 DEBUG: LEFT CLICK executed
+2025-11-30 23:49:30,900 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=26.93px, percent=9.84%, thr_pct=10%, cooldown=0.342s
+2025-11-30 23:49:31,010 DEBUG: LEFT CLICK executed
+2025-11-30 23:49:31,791 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=40.05px, percent=15.25%, thr_pct=10%, cooldown=0.892s
+2025-11-30 23:49:31,791 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:31,858 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=42.00px, percent=15.87%, thr_pct=10%, cooldown=0.959s
+2025-11-30 23:49:31,859 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:32,312 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=63.32px, percent=22.81%, thr_pct=10%, cooldown=1.414s
+2025-11-30 23:49:32,313 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:32,401 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=51.08px, percent=18.56%, thr_pct=10%, cooldown=1.503s
+2025-11-30 23:49:32,414 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:32,545 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=26.93px, percent=9.77%, thr_pct=10%, cooldown=1.644s
+2025-11-30 23:49:32,668 DEBUG: LEFT CLICK executed
+2025-11-30 23:49:32,909 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=71.00px, percent=26.20%, thr_pct=10%, cooldown=0.366s
+2025-11-30 23:49:32,910 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:32,982 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=77.88px, percent=28.88%, thr_pct=10%, cooldown=0.438s
+2025-11-30 23:49:32,982 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:39,637 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=119.21px, percent=44.02%, thr_pct=10%, cooldown=7.093s
+2025-11-30 23:49:39,638 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:39,737 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=113.99px, percent=40.79%, thr_pct=10%, cooldown=7.193s
+2025-11-30 23:49:39,738 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:39,821 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=26.83px, percent=9.68%, thr_pct=10%, cooldown=7.278s
+2025-11-30 23:49:39,936 DEBUG: LEFT CLICK executed
+2025-11-30 23:49:40,156 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=24.17px, percent=8.75%, thr_pct=10%, cooldown=0.334s
+2025-11-30 23:49:40,260 DEBUG: LEFT CLICK executed
+2025-11-30 23:49:40,501 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=23.26px, percent=8.42%, thr_pct=10%, cooldown=0.345s
+2025-11-30 23:49:40,619 DEBUG: LEFT CLICK executed
+2025-11-30 23:49:40,830 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=25.30px, percent=9.21%, thr_pct=10%, cooldown=0.330s
+2025-11-30 23:49:40,960 DEBUG: LEFT CLICK executed
+2025-11-30 23:49:41,165 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=57.22px, percent=20.96%, thr_pct=10%, cooldown=0.333s
+2025-11-30 23:49:41,165 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:44,493 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=22.63px, percent=8.44%, thr_pct=10%, cooldown=3.662s
+2025-11-30 23:49:44,600 DEBUG: LEFT CLICK executed
+2025-11-30 23:49:45,352 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=161.77px, percent=61.32%, thr_pct=25%, cooldown=0.859s
+2025-11-30 23:49:45,354 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:49:45,458 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=139.64px, percent=52.22%, thr_pct=25%, cooldown=0.965s
+2025-11-30 23:49:45,460 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:49:47,698 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=81.79px, percent=36.78%, thr_pct=10%, cooldown=3.206s
+2025-11-30 23:49:47,700 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:48,909 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=11.18px, percent=5.34%, thr_pct=10%, cooldown=4.416s
+2025-11-30 23:49:49,083 DEBUG: LEFT CLICK executed
+2025-11-30 23:49:49,588 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=24.08px, percent=11.01%, thr_pct=10%, cooldown=0.676s
+2025-11-30 23:49:49,589 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:50,337 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=36.06px, percent=14.34%, thr_pct=10%, cooldown=1.427s
+2025-11-30 23:49:50,338 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:50,427 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=17.80px, percent=6.96%, thr_pct=10%, cooldown=1.517s
+2025-11-30 23:49:50,545 DEBUG: LEFT CLICK executed
+2025-11-30 23:49:51,934 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=22.00px, percent=8.32%, thr_pct=10%, cooldown=1.507s
+2025-11-30 23:49:52,051 DEBUG: LEFT CLICK executed
+2025-11-30 23:49:52,319 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=17.69px, percent=6.67%, thr_pct=10%, cooldown=0.386s
+2025-11-30 23:49:52,423 DEBUG: LEFT CLICK executed
+2025-11-30 23:49:52,666 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=20.22px, percent=7.57%, thr_pct=10%, cooldown=0.347s
+2025-11-30 23:49:52,768 DEBUG: LEFT CLICK executed
+2025-11-30 23:49:52,985 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=25.63px, percent=10.31%, thr_pct=10%, cooldown=0.319s
+2025-11-30 23:49:52,986 DEBUG: Left click condition not met (distance above threshold)
+2025-11-30 23:49:56,288 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=73.93px, percent=33.18%, thr_pct=25%, cooldown=3.622s
+2025-11-30 23:49:56,290 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:49:56,386 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=75.89px, percent=33.54%, thr_pct=25%, cooldown=3.719s
+2025-11-30 23:49:56,387 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:49:56,914 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=33.38px, percent=19.14%, thr_pct=25%, cooldown=4.247s
+2025-11-30 23:49:57,118 DEBUG: RIGHT CLICK executed
+2025-11-30 23:49:57,230 DEBUG: Left click check: gesture=left_click, mapped=left_click, length=10.82px, percent=6.35%, thr_pct=10%, cooldown=0.317s
+2025-11-30 23:49:57,337 DEBUG: LEFT CLICK executed
+2025-11-30 23:49:57,550 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=23.19px, percent=14.14%, thr_pct=25%, cooldown=0.320s
+2025-11-30 23:49:57,754 DEBUG: RIGHT CLICK executed
+2025-11-30 23:49:57,914 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=2.24px, percent=1.53%, thr_pct=25%, cooldown=0.363s
+2025-11-30 23:49:58,117 DEBUG: RIGHT CLICK executed
+2025-11-30 23:50:18,613 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=52.17px, percent=23.81%, thr_pct=50%, cooldown=20.700s
+2025-11-30 23:50:18,823 DEBUG: RIGHT CLICK executed
+2025-11-30 23:50:21,352 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=12.37px, percent=6.19%, thr_pct=50%, cooldown=2.738s
+2025-11-30 23:50:21,565 DEBUG: RIGHT CLICK executed
+2025-11-30 23:50:21,885 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=79.01px, percent=32.47%, thr_pct=50%, cooldown=0.534s
+2025-11-30 23:50:22,089 DEBUG: RIGHT CLICK executed
+2025-11-30 23:50:26,454 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=90.26px, percent=32.56%, thr_pct=50%, cooldown=4.567s
+2025-11-30 23:50:26,667 DEBUG: RIGHT CLICK executed
+2025-11-30 23:50:26,786 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=96.32px, percent=35.40%, thr_pct=50%, cooldown=0.334s
+2025-11-30 23:50:27,000 DEBUG: RIGHT CLICK executed
+2025-11-30 23:50:27,122 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=99.69px, percent=34.95%, thr_pct=50%, cooldown=0.336s
+2025-11-30 23:50:27,334 DEBUG: RIGHT CLICK executed
+2025-11-30 23:50:28,966 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=81.93px, percent=30.43%, thr_pct=50%, cooldown=1.845s
+2025-11-30 23:50:29,169 DEBUG: RIGHT CLICK executed
+2025-11-30 23:50:29,296 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=93.09px, percent=34.65%, thr_pct=50%, cooldown=0.329s
+2025-11-30 23:50:29,512 DEBUG: RIGHT CLICK executed
+2025-11-30 23:50:29,630 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=98.62px, percent=36.52%, thr_pct=50%, cooldown=0.335s
+2025-11-30 23:50:29,841 DEBUG: RIGHT CLICK executed
+2025-11-30 23:50:30,398 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=91.35px, percent=34.15%, thr_pct=50%, cooldown=0.769s
+2025-11-30 23:50:30,613 DEBUG: RIGHT CLICK executed
+2025-11-30 23:50:30,768 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=88.64px, percent=32.99%, thr_pct=50%, cooldown=0.370s
+2025-11-30 23:50:30,983 DEBUG: RIGHT CLICK executed
+2025-11-30 23:50:33,244 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=72.01px, percent=28.21%, thr_pct=50%, cooldown=2.476s
+2025-11-30 23:50:33,459 DEBUG: RIGHT CLICK executed
+2025-11-30 23:50:33,573 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=82.05px, percent=31.41%, thr_pct=50%, cooldown=0.326s
+2025-11-30 23:50:33,801 DEBUG: RIGHT CLICK executed
+2025-11-30 23:50:37,477 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=69.64px, percent=28.53%, thr_pct=50%, cooldown=3.907s
+2025-11-30 23:50:37,691 DEBUG: RIGHT CLICK executed
+2025-11-30 23:50:37,796 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=70.71px, percent=29.19%, thr_pct=50%, cooldown=0.316s
+2025-11-30 23:50:38,010 DEBUG: RIGHT CLICK executed
+2025-11-30 23:50:38,127 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=71.55px, percent=30.09%, thr_pct=50%, cooldown=0.334s
+2025-11-30 23:50:38,331 DEBUG: RIGHT CLICK executed
+2025-11-30 23:50:40,099 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=70.52px, percent=30.17%, thr_pct=50%, cooldown=1.972s
+2025-11-30 23:50:40,320 DEBUG: RIGHT CLICK executed
+2025-11-30 23:50:40,429 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=59.64px, percent=25.66%, thr_pct=50%, cooldown=0.329s
+2025-11-30 23:50:40,640 DEBUG: RIGHT CLICK executed
+2025-11-30 23:50:40,749 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=60.46px, percent=26.09%, thr_pct=50%, cooldown=0.322s
+2025-11-30 23:50:40,959 DEBUG: RIGHT CLICK executed
+2025-11-30 23:50:41,721 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=77.37px, percent=32.71%, thr_pct=50%, cooldown=0.970s
+2025-11-30 23:50:41,936 DEBUG: RIGHT CLICK executed
+2025-11-30 23:50:43,139 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=56.32px, percent=24.95%, thr_pct=50%, cooldown=1.419s
+2025-11-30 23:50:43,343 DEBUG: RIGHT CLICK executed
+2025-11-30 23:56:59,453 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=75.80px, percent=39.81%, thr_pct=50%, cooldown=1764527219.453s
+2025-11-30 23:56:59,676 DEBUG: RIGHT CLICK executed
+2025-11-30 23:57:30,999 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=136.31px, percent=57.46%, thr_pct=50%, cooldown=31.547s
+2025-11-30 23:57:31,001 DEBUG: Right click condition not met (distance above threshold)
+2025-11-30 23:57:31,126 DEBUG: Right click check: gesture=right_click, mapped=right_click, length=168.12px, percent=69.67%, thr_pct=50%, cooldown=31.672s
+2025-11-30 23:57:31,128 DEBUG: Right click condition not met (distance above threshold)
+2025-12-01 00:09:29,897 DEBUG: Login attempt for user='hi'
+2025-12-01 00:09:29,898 DEBUG: Loaded users file 'users.json' successfully; user count=1
+2025-12-01 00:09:29,898 DEBUG: Stored entry for 'hi' is dict; keys=['password', 'email', 'verified']
+2025-12-01 00:09:29,899 DEBUG: User 'hi' provided correct password and is verified; logging in
+2025-12-01 00:15:46,495 DEBUG: Login attempt for user='hi'
+2025-12-01 00:15:46,495 DEBUG: Loaded users file 'users.json' successfully; user count=1
+2025-12-01 00:15:46,496 DEBUG: Stored entry for 'hi' is dict; keys=['password', 'email', 'verified']
+2025-12-01 00:15:46,496 DEBUG: User 'hi' provided correct password and is verified; logging in

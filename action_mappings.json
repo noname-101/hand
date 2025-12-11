@@ -1,0 +1,22 @@
+{
+  "move": {
+    "enabled": true,
+    "gesture": "move"
+  },
+  "left_click": {
+    "enabled": true,
+    "gesture": "left_click"
+  },
+  "right_click": {
+    "enabled": true,
+    "gesture": "right_click"
+  },
+  "scroll_up": {
+    "enabled": true,
+    "gesture": "up"
+  },
+  "scroll_down": {
+    "enabled": true,
+    "gesture": "scroll_down"
+  }
+}
