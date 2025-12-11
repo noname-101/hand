@@ -107,12 +107,13 @@ The report is a professional academic document (50+ pages) structured according 
 ## Features
 
 ### Professional Formatting
+- ✅ Header on all content pages: "Hand Gesture Control" (centered, bold)
 - ✅ Centered chapter titles in uppercase (CHAPTER 1, CHAPTER 2, etc.)
 - ✅ Custom footer on all content pages: "Dept. of CSE, CITNC | 2025-2026 | [page number]"
-- ✅ Horizontal line above footer
+- ✅ Horizontal line above footer and below header
 - ✅ Roman numerals (i, ii, iii) for front matter
 - ✅ Arabic numerals (1, 2, 3) for main content
-- ✅ No footer on title, certificate, and declaration pages
+- ✅ No header/footer on title, certificate, and declaration pages
 
 ### Code Integration
 - ✅ Python syntax highlighting
