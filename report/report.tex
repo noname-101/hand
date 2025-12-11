@@ -102,16 +102,6 @@
     \renewcommand{\footrulewidth}{0pt}
 }
 
-% Style for contents pages (no header, only footer)
-\fancypagestyle{contents}{
-    \fancyhf{}
-    \fancyfoot[L]{Dept. of CSE, CITNC}
-    \fancyfoot[C]{2025--2026}
-    \fancyfoot[R]{\thepage}
-    \renewcommand{\headrulewidth}{0pt}
-    \renewcommand{\footrulewidth}{0.5pt}
-}
-
 % ==================== PYTHON CODE LISTINGS ====================
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -322,10 +312,10 @@ Finally, we extend our thanks to all our friends and colleagues who directly or 
 % ==================== FRONT MATTER WITH ROMAN NUMERALS ====================
 \pagenumbering{roman}
 \setcounter{page}{1}
+\pagestyle{fancy}
 
 % ==================== TABLE OF CONTENTS ====================
 \newpage
-\pagestyle{contents}
 \tableofcontents
 
 % ==================== LIST OF FIGURES ====================
@@ -895,6 +885,7 @@ Color Space & BGR (OpenCV) \\ \hline
 
 This chapter has outlined comprehensive functional and non-functional requirements for the Hand Gesture Control System. The specifications ensure that the system meets performance, usability, reliability, and security standards while providing rich functionality for gesture-based computer control.
 
+\clearpage
 % ==================== CHAPTER 4: SYSTEM DESIGN ====================
 \chapter{SYSTEM DESIGN}
 
@@ -1219,6 +1210,7 @@ While the system uses JSON files rather than a traditional database, the data st
 
 This chapter presented the comprehensive system design for the Hand Gesture Control System. The modular architecture, well-defined components, and clear data flows ensure maintainability and extensibility. The use of established design patterns promotes code reusability and flexibility for future enhancements.
 
+\clearpage
 % ==================== CHAPTER 5: ALGORITHM AND IMPLEMENTATION ====================
 \chapter{ALGORITHM AND IMPLEMENTATION}
 
@@ -2025,6 +2017,8 @@ The success of this project validates the potential of gesture-based interfaces 
 
 
 % ==================== REFERENCES ====================
+\newpage
+\addcontentsline{toc}{chapter}{BIBLIOGRAPHY}
 \begin{thebibliography}{99}
 
 \bibitem{mediapipe}
