@@ -475,10 +475,6 @@ Procrustes analysis provides rotation, scaling, and translation invariance for s
 d_P(X, Y) = \min_{s, R, t} \|X - sYR - t\|_F
 \]
 
-\section{Summary}
-
-Literature review shows MediaPipe combined with Procrustes analysis offers an optimal balance of accuracy, speed, and hardware requirements for gesture-based control.
-
 \section{Related Systems and Applications}
 
 \subsection{Commercial Products}
@@ -514,10 +510,6 @@ While existing systems provide various capabilities, this project addresses seve
     
     \item \textbf{User Experience}: Modern GUI with real-time visualization and easy configuration.
 \end{enumerate}
-
-\section{Summary}
-
-This literature review demonstrates that while significant progress has been made in hand gesture recognition, there remains scope for systems that combine accuracy, flexibility, and ease of use. Our approach leverages state-of-the-art hand tracking technology while adding customization capabilities and a user-friendly interface, addressing practical requirements for real-world deployment.
 
 % ==================== CHAPTER 3: REQUIREMENTS AND SPECIFICATIONS ====================
 \chapter{REQUIREMENTS AND SPECIFICATIONS}
@@ -759,7 +751,7 @@ Fist & Right Click & Right-click menu \\ \hline
 \end{tabular}
 \end{table}
 
-\section{System Specifications Summary}
+\section{System Specifications}
 
 \begin{table}[H]
 \centering
@@ -811,10 +803,6 @@ Color Space & BGR (OpenCV) \\ \hline
     \end{enumerate}
     \item \textbf{Postcondition}: Custom gesture ready for use
 \end{itemize}
-
-\section{Summary}
-
-This chapter has outlined comprehensive functional and non-functional requirements for the Hand Gesture Control System. The specifications ensure that the system meets performance, usability, reliability, and security standards while providing rich functionality for gesture-based computer control.
 
 \clearpage
 % ==================== CHAPTER 4: SYSTEM DESIGN ====================
@@ -1137,10 +1125,6 @@ While the system uses JSON files rather than a traditional database, the data st
     \item Gesture data stored per-user (isolated)
 \end{itemize}
 
-\section{Summary}
-
-This chapter presented the comprehensive system design for the Hand Gesture Control System. The modular architecture, well-defined components, and clear data flows ensure maintainability and extensibility. The use of established design patterns promotes code reusability and flexibility for future enhancements.
-
 \clearpage
 % ==================== CHAPTER 5: ALGORITHM AND IMPLEMENTATION ====================
 \chapter{ALGORITHM AND IMPLEMENTATION}
@@ -1294,17 +1278,10 @@ def execute_action(gesture, hand_position):
         pyautogui.scroll(3)
 \end{lstlisting}
 
-\section{Summary}
-
-This chapter presented the core algorithms including MediaPipe-based hand detection, Procrustes analysis for gesture recognition, and action execution for mouse control.
 % ==================== CHAPTER 6: CONCLUSION AND FUTURE SCOPE ====================
 \chapter{CONCLUSION AND FUTURE SCOPE}
 
-\section{Summary of Work}
-
-This project successfully developed a comprehensive Hand Gesture Control System that enables intuitive, touchless computer interaction. The system leverages state-of-the-art computer vision techniques, combining MediaPipe for hand tracking with Procrustes analysis for gesture recognition.
-
-\subsection{Key Achievements}
+\section{Key Achievements}
 
 \begin{enumerate}
     \item Implemented real-time hand detection and landmark extraction
