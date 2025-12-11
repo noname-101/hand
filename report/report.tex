@@ -432,121 +432,52 @@ The scope of this project encompasses:
 % ==================== CHAPTER 2: LITERATURE SURVEY ====================
 \chapter{LITERATURE SURVEY}
 
-\section{Introduction to Gesture Recognition}
+\section{Introduction}
 
-Hand gesture recognition has been an active area of research in computer vision and human-computer interaction for several decades. Early work in this field focused on data glove-based approaches, which required users to wear specialized hardware. With advances in computer vision and machine learning, vision-based gesture recognition has become increasingly popular due to its non-intrusive nature and accessibility.
+Hand gesture recognition has evolved from data glove-based systems (1980s-90s) to vision-based approaches (2000s), machine learning methods (2010s), and real-time frameworks like MediaPipe (2020-present).
 
-\section{Evolution of Gesture Recognition Technologies}
+\section{Related Approaches}
 
-\subsection{Timeline of Major Developments}
+\subsection{Traditional Methods}
+Early approaches used skin color segmentation, edge detection, and shape matching. Limitations included sensitivity to lighting and computational expense.
 
-\begin{itemize}
-    \item \textbf{1980s-1990s}: Data glove-based systems (e.g., VPL DataGlove) - Required specialized hardware, expensive and cumbersome.
-    
-    \item \textbf{2000s}: Vision-based systems using color and depth information - Introduction of algorithms like background subtraction, skin color segmentation, and hand shape matching.
-    
-    \item \textbf{2010s}: Machine learning approaches - Support Vector Machines (SVM), Hidden Markov Models (HMM), and early neural networks for gesture classification.
-    
-    \item \textbf{2015-2020}: Deep learning revolution - Convolutional Neural Networks (CNN), Recurrent Neural Networks (RNN), and 3D CNNs for spatiotemporal gesture recognition.
-    
-    \item \textbf{2020-Present}: Real-time frameworks - MediaPipe, OpenPose, and efficient mobile-optimized models enabling real-time gesture recognition on consumer hardware.
-\end{itemize}
+\subsection{Machine Learning}
+SVM, HMM, Random Forests, and k-NN provided robust classification but required careful feature engineering.
 
-\section{Review of Related Work}
-
-\subsection{Traditional Computer Vision Approaches}
-
-Traditional methods for hand gesture recognition typically involve:
-\begin{enumerate}
-    \item \textbf{Skin Color Segmentation}: Using color spaces like HSV or YCbCr to detect skin regions.
-    \item \textbf{Edge Detection}: Canny edge detection or Sobel operators to find hand contours.
-    \item \textbf{Shape Matching}: Template matching, Hu moments, or Fourier descriptors for shape analysis.
-    \item \textbf{Feature Extraction}: SIFT, SURF, or HOG features for gesture classification.
-\end{enumerate}
-
-\textbf{Limitations}: Sensitive to lighting conditions, background clutter, and skin tone variations. Computationally expensive and often require controlled environments.
-
-\subsection{Machine Learning Based Approaches}
-
-Several studies have employed machine learning techniques:
-
-\begin{itemize}
-    \item \textbf{Support Vector Machines (SVM)}: Used for classifying hand gestures based on extracted features. Good accuracy but requires careful feature engineering.
-    
-    \item \textbf{Hidden Markov Models (HMM)}: Effective for temporal gesture recognition, capturing the sequential nature of gestures.
-    
-    \item \textbf{Random Forests}: Ensemble learning methods providing robust classification with less overfitting.
-    
-    \item \textbf{k-Nearest Neighbors (k-NN)}: Simple and effective for gesture matching, basis for template-based approaches.
-\end{itemize}
-
-\subsection{Deep Learning Approaches}
-
-Recent advancements in deep learning have revolutionized gesture recognition:
-
-\begin{itemize}
-    \item \textbf{Convolutional Neural Networks (CNN)}: VGG, ResNet, and MobileNet architectures for static gesture recognition from images.
-    
-    \item \textbf{Recurrent Networks (LSTM/GRU)}: Capturing temporal dependencies in dynamic gestures.
-    
-    \item \textbf{3D CNNs}: Processing spatiotemporal information directly from video sequences.
-    
-    \item \textbf{Transformer Models}: Recent work using attention mechanisms for gesture sequence modeling.
-\end{itemize}
+\subsection{Deep Learning}
+CNN, LSTM, and 3D CNNs revolutionized gesture recognition with end-to-end learning and high accuracy.
 
 \subsection{MediaPipe Framework}
-
-Google's MediaPipe is a cross-platform framework for building multimodal machine learning pipelines. The MediaPipe Hands solution provides:
-
-\begin{itemize}
-    \item Real-time hand detection and tracking
-    \item 21-point 3D hand landmark detection
-    \item Multi-hand support
-    \item High accuracy and low latency
-    \item Cross-platform compatibility (mobile, desktop, web)
-\end{itemize}
-
-MediaPipe uses a two-stage pipeline: (1) palm detection model to locate hands in the frame, and (2) hand landmark model to predict 21 3D landmarks per hand. This approach is highly efficient and forms the foundation of our system.
+Google's MediaPipe provides real-time hand detection with 21-point 3D landmarks using a two-stage pipeline: palm detection followed by landmark prediction. It offers high accuracy, low latency, and cross-platform compatibility.
 
 \section{Comparative Analysis}
-
-Table \ref{tab:comparison} presents a comparison of different gesture recognition approaches:
 
 \begin{table}[H]
 \centering
 \caption{Comparison of Gesture Recognition Systems}
 \label{tab:comparison}
-\begin{tabular}{|l|l|l|l|l|}
+\begin{tabular}{|l|l|l|l|}
 \hline
-\textbf{Approach} & \textbf{Accuracy} & \textbf{Speed} & \textbf{Hardware} & \textbf{Limitations} \\ \hline
-Data Gloves & Very High & Real-time & Specialized & Expensive, cumbersome \\ \hline
-Color Segmentation & Moderate & Fast & Standard & Lighting sensitive \\ \hline
-Template Matching & Moderate & Moderate & Standard & View-dependent \\ \hline
-SVM/ML & Good & Moderate & Standard & Feature engineering \\ \hline
-Deep Learning & Very High & Moderate & GPU required & Training data \\ \hline
-MediaPipe & High & Real-time & Standard & Single view \\ \hline
-\textbf{Our System} & \textbf{High} & \textbf{Real-time} & \textbf{Standard} & \textbf{Lighting} \\ \hline
+\textbf{Approach} & \textbf{Accuracy} & \textbf{Speed} & \textbf{Limitations} \\ \hline
+Data Gloves & Very High & Real-time & Expensive \\ \hline
+Color Segmentation & Moderate & Fast & Lighting sensitive \\ \hline
+SVM/ML & Good & Moderate & Feature engineering \\ \hline
+MediaPipe & High & Real-time & Single view \\ \hline
+\textbf{Our System} & \textbf{High} & \textbf{Real-time} & \textbf{Minimal} \\ \hline
 \end{tabular}
 \end{table}
 
 \section{Procrustes Analysis}
 
-Procrustes analysis is a statistical shape analysis technique used to determine the similarity between two shapes. In the context of gesture recognition, it provides rotation, scaling, and translation invariance, making it ideal for matching hand poses regardless of hand orientation or position in the frame.
+Procrustes analysis provides rotation, scaling, and translation invariance for shape matching. It centers both shapes, scales to unit size, finds optimal rotation, and computes Euclidean distance:
 
-The Procrustes distance between two shapes is computed by:
-\begin{enumerate}
-    \item Centering both shapes at the origin (translation invariance)
-    \item Scaling to unit size (scale invariance)
-    \item Finding optimal rotation to minimize distance (rotation invariance)
-    \item Computing the Euclidean distance between aligned shapes
-\end{enumerate}
-
-Mathematical formulation:
-\begin{align}
+\[
 d_P(X, Y) = \min_{s, R, t} \|X - sYR - t\|_F
-\end{align}
+\]
 
-where $X$ and $Y$ are shape matrices, $s$ is scale, $R$ is rotation matrix, $t$ is translation vector, and $\|\cdot\|_F$ is the Frobenius norm.
+\section{Summary}
+
+Literature review shows MediaPipe combined with Procrustes analysis offers an optimal balance of accuracy, speed, and hardware requirements for gesture-based control.
 
 \section{Related Systems and Applications}
 
@@ -1216,621 +1147,156 @@ This chapter presented the comprehensive system design for the Hand Gesture Cont
 
 \section{Overview}
 
-This chapter presents the core algorithms and implementation details of the Hand Gesture Control System. We describe the mathematical formulations, pseudocode, and actual Python implementations of key components including hand detection, gesture recognition using Procrustes analysis, custom gesture training, and action execution.
+This chapter presents core algorithms and implementation details including hand detection, gesture recognition using Procrustes analysis, and action execution.
 
-\section{Hand Detection Algorithm}
+\section{Hand Detection}
 
-\subsection{Algorithm Description}
-
-The hand detection pipeline uses Google's MediaPipe Hands solution, which employs a two-stage approach:
+The hand detection uses MediaPipe Hands with a two-stage approach for palm detection and landmark extraction.
 
 \begin{algorithm}[H]
 \caption{Hand Detection and Landmark Extraction}
 \begin{algorithmic}[1]
 \STATE \textbf{Input:} RGB image frame $I$
-\STATE \textbf{Output:} List of 21 3D landmarks $L = \{l_0, l_1, ..., l_{20}\}$
-\STATE
-\STATE Convert image to RGB color space
-\STATE Apply palm detection model to locate hand regions
-\IF{hand detected}
-    \STATE Crop region of interest around detected palm
-    \STATE Apply hand landmark model to predict 21 keypoints
-    \STATE Convert normalized coordinates to pixel coordinates
-    \STATE \textbf{return} landmark list $L$
-\ELSE
-    \STATE \textbf{return} empty list
-\ENDIF
+\STATE \textbf{Output:} 21 3D landmarks $L = \{l_0, ..., l_{20}\}$
+\STATE Convert to RGB, detect palm, extract 21 keypoints
+\STATE \textbf{return} landmark list $L$ or empty if no hand
 \end{algorithmic}
 \end{algorithm}
 
-\subsection{Landmark Points}
+MediaPipe provides 21 landmarks: thumb (0-4), index (5-8), middle (9-12), ring (13-16), pinky (17-20).
 
-MediaPipe provides 21 landmarks per hand:
-\begin{itemize}
-    \item Landmarks 0-4: Thumb (wrist to tip)
-    \item Landmarks 5-8: Index finger
-    \item Landmarks 9-12: Middle finger
-    \item Landmarks 13-16: Ring finger
-    \item Landmarks 17-20: Pinky finger
-\end{itemize}
+\subsection{HandDetector Class}
 
-\subsection{Implementation: HandDetector Class}
-
-\begin{lstlisting}[caption={HandDetector Class Initialization}, label={code:handdetector_init}]
+\begin{lstlisting}[caption={HandDetector Class}, label={code:handdetector}]
 class HandDetector:
     def __init__(self, mode=False, maxHands=1, 
                  detectionCon=0.5, trackCon=0.5):
-        """
-        Initialize MediaPipe hand detector
-        Args:
-            mode: Static image mode or video mode
-            maxHands: Maximum number of hands to detect
-            detectionCon: Minimum detection confidence
-            trackCon: Minimum tracking confidence
-        """
-        self.mode = mode
-        self.maxHands = maxHands
-        self.detectionCon = detectionCon
-        self.trackCon = trackCon
-        self.tipIds = [4, 8, 12, 16, 20]  # Finger tip landmarks
-        
-        # Initialize MediaPipe Hands
+        self.tipIds = [4, 8, 12, 16, 20]
         self.mpHands = mp.solutions.hands
         self.hands = self.mpHands.Hands(
-            static_image_mode=self.mode,
-            max_num_hands=self.maxHands,
-            min_detection_confidence=self.detectionCon,
-            min_tracking_confidence=self.trackCon,
-        )
+            static_image_mode=mode,
+            max_num_hands=maxHands,
+            min_detection_confidence=detectionCon,
+            min_tracking_confidence=trackCon)
         self.mpDraw = mp.solutions.drawing_utils
-        self.lmList = []
-        self.results = None
-\end{lstlisting}
 
-\begin{lstlisting}[caption={Hand Detection and Landmark Extraction}, label={code:findHands}]
-def findHands(self, img, draw=True):
-    """
-    Detect hands in image and optionally draw landmarks
-    Args:
-        img: Input BGR image from OpenCV
-        draw: Whether to draw hand landmarks on image
-    Returns:
-        Image with drawings (if enabled)
-    """
-    # Convert BGR to RGB for MediaPipe
-    imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-    
-    # Process the image and detect hands
-    self.results = self.hands.process(imgRGB)
-    
-    # Draw hand landmarks if detected
-    if self.results.multi_hand_landmarks:
-        for handLms in self.results.multi_hand_landmarks:
-            if draw:
+    def findHands(self, img, draw=True):
+        imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        self.results = self.hands.process(imgRGB)
+        if self.results.multi_hand_landmarks and draw:
+            for handLms in self.results.multi_hand_landmarks:
                 self.mpDraw.draw_landmarks(
-                    img, handLms, 
-                    self.mpHands.HAND_CONNECTIONS
-                )
-    return img
+                    img, handLms, self.mpHands.HAND_CONNECTIONS)
+        return img
 
-def findPosition(self, img, handNo=0, draw=False):
-    """
-    Extract landmark positions from detected hand
-    Args:
-        img: Input image
-        handNo: Which hand to extract (0 for first)
-        draw: Whether to draw circles on landmarks
-    Returns:
-        lmList: List of [id, x, y] for each landmark
-        bbox: Bounding box [xmin, ymin, xmax, ymax]
-    """
-    xList, yList, bbox = [], [], []
-    self.lmList = []
-    
-    if self.results and self.results.multi_hand_landmarks:
-        myHand = self.results.multi_hand_landmarks[handNo]
-        
-        for id, lm in enumerate(myHand.landmark):
-            h, w, _ = img.shape
-            cx, cy = int(lm.x * w), int(lm.y * h)
-            xList.append(cx)
-            yList.append(cy)
-            self.lmList.append([id, cx, cy])
-            
-            if draw:
-                cv2.circle(img, (cx, cy), 4, (255, 0, 255), cv2.FILLED)
-        
-        # Calculate bounding box
-        if xList and yList:
-            bbox = (min(xList), min(yList), max(xList), max(yList))
-            if draw:
-                cv2.rectangle(img, (bbox[0] - 20, bbox[1] - 20),
-                            (bbox[2] + 20, bbox[3] + 20), (0, 255, 0), 2)
-    
-    return self.lmList, bbox
+    def findPosition(self, img, handNo=0):
+        self.lmList = []
+        if self.results and self.results.multi_hand_landmarks:
+            myHand = self.results.multi_hand_landmarks[handNo]
+            for id, lm in enumerate(myHand.landmark):
+                h, w, _ = img.shape
+                cx, cy = int(lm.x * w), int(lm.y * h)
+                self.lmList.append([id, cx, cy])
+        return self.lmList
+
+    def fingersUp(self):
+        fingers = []
+        if len(self.lmList) == 21:
+            # Thumb
+            fingers.append(1 if self.lmList[self.tipIds[0]][1] > 
+                          self.lmList[self.tipIds[0]-1][1] else 0)
+            # Other fingers
+            for id in range(1, 5):
+                fingers.append(1 if self.lmList[self.tipIds[id]][2] < 
+                              self.lmList[self.tipIds[id]-2][2] else 0)
+        return fingers
 \end{lstlisting}
 
-\begin{lstlisting}[caption={Finger State Detection}, label={code:fingersUp}]
-def fingersUp(self):
-    """
-    Determine which fingers are extended
-    Returns:
-        List of 5 binary values [thumb, index, middle, ring, pinky]
-        1 = finger up, 0 = finger down
-    """
-    if len(self.lmList) != 21:
-        return [0, 0, 0, 0, 0]
-    
-    fingers = []
-    
-    # Thumb: Compare x-coordinates
-    if self.lmList[self.tipIds[0]][1] > self.lmList[self.tipIds[0] - 1][1]:
-        fingers.append(1)
-    else:
-        fingers.append(0)
-    
-    # Other four fingers: Compare y-coordinates
-    for id in range(1, 5):
-        if self.lmList[self.tipIds[id]][2] < self.lmList[self.tipIds[id] - 2][2]:
-            fingers.append(1)
-        else:
-            fingers.append(0)
-    
-    return fingers
-\end{lstlisting}
+\section{Gesture Recognition}
 
-\section{Gesture Recognition Algorithm}
+\subsection{Procrustes Analysis}
 
-\subsection{Mathematical Foundation}
+The Procrustes distance measures shape similarity after optimal alignment:
 
-The gesture recognition system uses Procrustes analysis to achieve rotation, scale, and translation invariance. Given two sets of landmarks $X, Y \in \mathbb{R}^{21 \times 2}$, the Procrustes distance is computed as:
+\[
+d_P(X, Y) = \min_{s,R,t} \|X - sYR - t\|_F
+\]
 
-\begin{align}
-d_P(X, Y) = \min_{s, R, t} \|X - sYR - t\|_F
-\end{align}
-
-where:
-\begin{itemize}
-    \item $s$ is a scaling factor
-    \item $R$ is an orthogonal rotation matrix
-    \item $t$ is a translation vector
-    \item $\|\cdot\|_F$ is the Frobenius norm
-\end{itemize}
-
-\subsection{Procrustes Alignment Steps}
+where $s$ is scale, $R$ is rotation, $t$ is translation.
 
 \begin{algorithm}[H]
-\caption{Procrustes Shape Alignment}
+\caption{Procrustes Alignment}
 \begin{algorithmic}[1]
-\STATE \textbf{Input:} Two shape matrices $A, B \in \mathbb{R}^{21 \times 2}$
-\STATE \textbf{Output:} Similarity score $s \in [0, 1]$
-\STATE
-\STATE \textbf{// Step 1: Center both shapes}
-\STATE $A_c \leftarrow A - \text{mean}(A)$
-\STATE $B_c \leftarrow B - \text{mean}(B)$
-\STATE
-\STATE \textbf{// Step 2: Scale to unit norm}
-\STATE $\|A_c\| \leftarrow \sqrt{\sum_{i,j} A_{c,ij}^2}$
-\STATE $\|B_c\| \leftarrow \sqrt{\sum_{i,j} B_{c,ij}^2}$
-\STATE $A_n \leftarrow A_c / \|A_c\|$
-\STATE $B_n \leftarrow B_c / \|B_c\|$
-\STATE
-\STATE \textbf{// Step 3: Compute optimal rotation using SVD}
-\STATE $M \leftarrow A_n^T \cdot B_n$
-\STATE $U, \Sigma, V^T \leftarrow \text{SVD}(M)$
-\STATE $R \leftarrow U \cdot V^T$
-\STATE
-\STATE \textbf{// Step 4: Apply rotation}
-\STATE $A_{rot} \leftarrow A_n \cdot R$
-\STATE
-\STATE \textbf{// Step 5: Compute similarity}
-\STATE $d \leftarrow \text{mean}(\|A_{rot} - B_n\|_2)$ \COMMENT{Per-point Euclidean distance}
-\STATE $s \leftarrow \max(0, 1 - d)$ \COMMENT{Convert distance to similarity}
-\STATE \textbf{return} $s$
+\STATE Center: $A_c = A - \mu_A$, $B_c = B - \mu_B$
+\STATE Scale: $A_n = A_c / \|A_c\|$, $B_n = B_c / \|B_c\|$
+\STATE Compute $M = A_n^T B_n$, SVD: $M = U \Sigma V^T$
+\STATE Optimal rotation: $R = UV^T$
+\STATE Similarity: $sim = 1 - d_P(A_n, B_n R)$
 \end{algorithmic}
 \end{algorithm}
 
-\subsection{Implementation: Procrustes Alignment}
+\subsection{GestureRecognizer Class}
 
-\begin{lstlisting}[caption={Procrustes Similarity Computation}, label={code:procrustes}]
-def _procrustes_similarity(self, A, B):
-    """
-    Compute similarity after Procrustes alignment of A->B.
-    Returns value in [0,1] where 1 is identical.
+\begin{lstlisting}[caption={Gesture Recognition Implementation}, label={code:gesture_rec}]
+class GestureRecognizer:
+    def __init__(self, threshold=0.85):
+        self.threshold = threshold
+        self.gestures = self.load_gestures()
     
-    Args:
-        A: First shape matrix (N x 2)
-        B: Second shape matrix (N x 2)
-    Returns:
-        Similarity score in range [0, 1]
-    """
-    try:
-        A = np.array(A, dtype=np.float64)
-        B = np.array(B, dtype=np.float64)
-        
-        if A.shape != B.shape or A.size == 0:
-            return 0.0
-        
-        # Step 1: Center both shapes at origin
-        A_c = A - A.mean(axis=0)
-        B_c = B - B.mean(axis=0)
-        
-        # Step 2: Scale to unit norm
-        normA = np.linalg.norm(A_c)
-        normB = np.linalg.norm(B_c)
-        if normA == 0 or normB == 0:
-            return 0.0
-        A_n = A_c / normA
-        B_n = B_c / normB
-        
-        # Step 3: Find optimal rotation using SVD
+    def normalize_landmarks(self, landmarks):
+        landmarks = np.array(landmarks)[:, 1:]  # Remove IDs
+        center = landmarks.mean(axis=0)
+        centered = landmarks - center
+        scale = np.linalg.norm(centered)
+        return centered / scale if scale > 0 else centered
+    
+    def _procrustes_similarity(self, A, B):
+        A_c, B_c = A - A.mean(axis=0), B - B.mean(axis=0)
+        A_n = A_c / np.linalg.norm(A_c)
+        B_n = B_c / np.linalg.norm(B_c)
         M = A_n.T.dot(B_n)
         U, _, Vt = np.linalg.svd(M)
         R = U.dot(Vt)
+        return 1 - np.linalg.norm(A_n - B_n.dot(R))
+    
+    def recognize(self, landmarks):
+        if not landmarks or len(landmarks) != 21:
+            return None, 0
         
-        # Step 4: Apply rotation to A
-        A_rot = A_n.dot(R)
+        query = self.normalize_landmarks(landmarks)
+        best_match, best_score = None, 0
         
-        # Step 5: Compute average per-point distance
-        diffs = np.linalg.norm(A_rot - B_n, axis=1)
-        avg_dist = float(np.mean(diffs))
+        for name, template in self.gestures.items():
+            score = self._procrustes_similarity(query, template)
+            if score > best_score:
+                best_match, best_score = name, score
         
-        # Step 6: Convert distance to similarity [0,1]
-        similarity = max(0.0, 1.0 - avg_dist)
-        
-        return similarity
-        
-    except Exception as e:
-        logging.error(f"Procrustes alignment error: {e}")
-        return 0.0
-\end{lstlisting}
-
-\subsection{Landmark Normalization}
-
-Before applying Procrustes analysis, landmarks must be normalized:
-
-\begin{lstlisting}[caption={Landmark Normalization}, label={code:normalize}]
-def _normalize_landmarks(self, lmList):
-    """
-    Normalize landmark coordinates to [0,1] range
-    
-    Args:
-        lmList: List of [id, x, y] landmark points
-    Returns:
-        List of [nx, ny] normalized coordinates
-    """
-    if not lmList:
-        return []
-    
-    # Extract x and y coordinates
-    xs = [p[1] for p in lmList]
-    ys = [p[2] for p in lmList]
-    
-    # Find bounding box
-    minx, maxx = min(xs), max(xs)
-    miny, maxy = min(ys), max(ys)
-    
-    # Calculate dimensions (avoid division by zero)
-    width = max(maxx - minx, 1)
-    height = max(maxy - miny, 1)
-    
-    # Normalize each point to [0,1]
-    normalized = []
-    for p in lmList:
-        nx = (p[1] - minx) / width
-        ny = (p[2] - miny) / height
-        normalized.append([nx, ny])
-    
-    return normalized
-\end{lstlisting}
-
-\subsection{Complete Gesture Recognition Algorithm}
-
-\begin{algorithm}[H]
-\caption{Gesture Recognition}
-\begin{algorithmic}[1]
-\STATE \textbf{Input:} Landmark list $L$, gesture templates $T$, threshold $\theta$
-\STATE \textbf{Output:} Recognized gesture name or "none"
-\STATE
-\STATE $L_{norm} \leftarrow \text{normalize}(L)$ \COMMENT{Normalize coordinates}
-\STATE $F \leftarrow \text{extractFeatures}(L_{norm})$ \COMMENT{Compute features}
-\STATE
-\STATE $best\_score \leftarrow 0$
-\STATE $best\_gesture \leftarrow$ "none"
-\STATE
-\FOR{each gesture $g$ in templates $T$}
-    \STATE $scores \leftarrow []$
-    \FOR{each template frame $f$ in $T[g]$}
-        \STATE $s \leftarrow \text{calculateSimilarity}(F, f)$
-        \STATE $scores.\text{append}(s)$
-    \ENDFOR
-    \STATE $avg\_score \leftarrow \text{mean}(scores)$
-    \IF{$avg\_score > best\_score$}
-        \STATE $best\_score \leftarrow avg\_score$
-        \STATE $best\_gesture \leftarrow g$
-    \ENDIF
-\ENDFOR
-\STATE
-\IF{$best\_score > \theta$}
-    \STATE \textbf{return} $best\_gesture$
-\ELSE
-    \STATE \textbf{return} "none"
-\ENDIF
-\end{algorithmic}
-\end{algorithm}
-
-\section{Custom Gesture Training Algorithm}
-
-\subsection{Algorithm Description}
-
-Custom gesture training involves capturing multiple samples of a gesture and creating a robust template:
-
-\begin{algorithm}[H]
-\caption{Custom Gesture Training}
-\begin{algorithmic}[1]
-\STATE \textbf{Input:} Gesture name $name$, number of samples $n$
-\STATE \textbf{Output:} Gesture template saved to database
-\STATE
-\STATE $samples \leftarrow []$
-\STATE
-\FOR{$i = 1$ to $n$}
-    \STATE Display "Perform gesture sample" $i$
-    \STATE Capture frame from camera
-    \STATE $L \leftarrow \text{detectHand}(frame)$
-    \IF{$L$ is valid}
-        \STATE $L_{norm} \leftarrow \text{normalize}(L)$
-        \STATE $F \leftarrow \text{extractFeatures}(L_{norm})$
-        \STATE $samples.\text{append}(F)$
-    \ELSE
-        \STATE $i \leftarrow i - 1$ \COMMENT{Retry this sample}
-    \ENDIF
-\ENDFOR
-\STATE
-\STATE \textbf{// Compute template statistics}
-\STATE $template \leftarrow samples$ \COMMENT{Store all samples}
-\STATE
-\STATE \textbf{// Calculate optimal threshold}
-\STATE $distances \leftarrow []$
-\FOR{each pair $(s_i, s_j)$ in $samples$}
-    \STATE $d \leftarrow 1 - \text{similarity}(s_i, s_j)$
-    \STATE $distances.\text{append}(d)$
-\ENDFOR
-\STATE $\theta \leftarrow \text{mean}(distances) + 2 \times \text{std}(distances)$
-\STATE
-\STATE Save $\{name: \{frames: template, threshold: \theta\}\}$ to file
-\STATE \textbf{return} Success
-\end{algorithmic}
-\end{algorithm}
-
-\subsection{Implementation: Custom Gesture Recording}
-
-\begin{lstlisting}[caption={Custom Gesture Recording}, label={code:record_gesture}]
-def record_gesture(self, gesture_name, num_samples=5):
-    """
-    Record a new custom gesture with multiple samples
-    
-    Args:
-        gesture_name: Name for the new gesture
-        num_samples: Number of sample frames to capture
-    Returns:
-        True if successful, False otherwise
-    """
-    samples = []
-    
-    print(f"Recording gesture: {gesture_name}")
-    print(f"Please perform the gesture {num_samples} times")
-    
-    for i in range(num_samples):
-        print(f"Sample {i+1}/{num_samples}...")
-        time.sleep(1)  # Give user time to prepare
-        
-        # Capture frame and extract landmarks
-        ret, frame = camera.read()
-        if not ret:
-            continue
-            
-        # Detect hand
-        frame = detector.findHands(frame)
-        lmList, bbox = detector.findPosition(frame)
-        
-        if len(lmList) == 21:
-            # Normalize and extract features
-            normalized = self._normalize_landmarks(lmList)
-            features = self._frame_to_features(lmList)
-            
-            if features:
-                samples.append(features)
-                print(f"Sample {i+1} captured successfully")
-        else:
-            print("No hand detected, retrying...")
-            i -= 1  # Retry this sample
-    
-    if len(samples) >= 3:  # Require at least 3 valid samples
-        # Calculate adaptive threshold based on sample variance
-        threshold = self._calculate_threshold(samples)
-        
-        # Save gesture template
-        self.gesture_templates[gesture_name] = {
-            'frames': samples,
-            'threshold': threshold
-        }
-        self.save_custom_gestures()
-        print(f"Gesture '{gesture_name}' recorded successfully!")
-        return True
-    else:
-        print("Failed to record enough samples")
-        return False
+        return (best_match, best_score) if best_score >= self.threshold else (None, 0)
 \end{lstlisting}
 
 \section{Action Execution}
 
-\subsection{Mouse Control Implementation}
-
-\begin{lstlisting}[caption={Mouse Movement Control}, label={code:mouse_control}]
-def execute_mouse_move(self, lmList, screen_width, screen_height):
-    """
-    Control mouse cursor using index finger position
+\begin{lstlisting}[caption={Mouse Control Actions}, label={code:actions}]
+def execute_action(gesture, hand_position):
+    if gesture == 'pointing':
+        # Move cursor
+        screen_x = np.interp(hand_position[0], [100, 620], [0, 1920])
+        screen_y = np.interp(hand_position[1], [100, 480], [0, 1080])
+        pyautogui.moveTo(screen_x, screen_y)
     
-    Args:
-        lmList: Hand landmark list
-        screen_width: Screen width in pixels
-        screen_height: Screen height in pixels
-    """
-    if len(lmList) < 9:
-        return
+    elif gesture == 'pinch':
+        pyautogui.click()
     
-    # Get index finger tip position (landmark 8)
-    finger_x = lmList[8][1]
-    finger_y = lmList[8][2]
+    elif gesture == 'swipe_left':
+        pyautogui.scroll(-3)
     
-    # Apply smoothing to reduce jitter
-    alpha = 0.7  # Smoothing factor
-    if hasattr(self, 'prev_x'):
-        finger_x = alpha * self.prev_x + (1 - alpha) * finger_x
-        finger_y = alpha * self.prev_y + (1 - alpha) * finger_y
-    
-    self.prev_x = finger_x
-    self.prev_y = finger_y
-    
-    # Map camera coordinates to screen coordinates
-    # Flip x-axis for mirror effect
-    screen_x = np.interp(finger_x, [0, 640], [0, screen_width])
-    screen_y = np.interp(finger_y, [0, 480], [0, screen_height])
-    
-    # Move mouse cursor
-    pyautogui.moveTo(screen_x, screen_y, duration=0.1)
-\end{lstlisting}
-
-\section{CameraWorker Thread Implementation}
-
-\begin{lstlisting}[caption={CameraWorker Background Processing Thread}, label={code:cameraworker}]
-class CameraWorker(QThread):
-    """Background thread for continuous video processing"""
-    
-    # Qt signals for communication with main thread
-    frameProcessed = Signal(QImage)
-    gestureDetected = Signal(str)
-    errorOccurred = Signal(str)
-    
-    def __init__(self):
-        super().__init__()
-        self.running = False
-        self.detector = HandDetector()
-        self.recognizer = GestureRecognizer()
-        self.action_cooldown = {}
-    
-    def run(self):
-        """Main processing loop (runs in separate thread)"""
-        cap = cv2.VideoCapture(0)
-        self.running = True
-        
-        while self.running:
-            ret, frame = cap.read()
-            if not ret:
-                self.errorOccurred.emit("Failed to capture frame")
-                continue
-            
-            # Detect hands
-            frame = self.detector.findHands(frame)
-            lmList, bbox = self.detector.findPosition(frame)
-            
-            # Recognize gesture if hand detected
-            if len(lmList) == 21:
-                gesture = self.recognizer.recognize_gesture(lmList)
-                
-                if gesture != "none":
-                    self.gestureDetected.emit(gesture)
-                    self.execute_action(gesture, lmList)
-            
-            # Convert frame to QImage for display
-            rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            h, w, ch = rgb_frame.shape
-            qimg = QImage(rgb_frame.data, w, h, ch * w, QImage.Format_RGB888)
-            self.frameProcessed.emit(qimg)
-        
-        cap.release()
-    
-    def stop(self):
-        """Stop the processing thread"""
-        self.running = False
-        self.wait()
-\end{lstlisting}
-
-\section{Authentication System}
-
-\begin{lstlisting}[caption={User Authentication Implementation}, label={code:auth}]
-def hash_password(password):
-    """Hash password using SHA-256"""
-    return hashlib.sha256(password.encode()).hexdigest()
-
-def register_user(username, email, password):
-    """
-    Register new user with email verification
-    
-    Args:
-        username: User's chosen username
-        email: User's email address
-        password: User's password (will be hashed)
-    Returns:
-        Verification code or None if failed
-    """
-    # Load existing users
-    users = load_users()
-    
-    if username in users:
-        return None  # Username already exists
-    
-    # Generate 6-digit verification code
-    verification_code = str(random.randint(100000, 999999))
-    
-    # Store user with hashed password
-    users[username] = {
-        'email': email,
-        'password_hash': hash_password(password),
-        'verification_code': verification_code,
-        'is_verified': False
-    }
-    
-    save_users(users)
-    
-    # Send verification email
-    send_verification_email(email, verification_code)
-    
-    return verification_code
-
-def verify_user(username, code):
-    """Verify user's email with code"""
-    users = load_users()
-    
-    if username not in users:
-        return False
-    
-    if users[username]['verification_code'] == code:
-        users[username]['is_verified'] = True
-        save_users(users)
-        return True
-    
-    return False
-
-def login_user(username, password):
-    """Authenticate user login"""
-    users = load_users()
-    
-    if username not in users:
-        return False
-    
-    if not users[username]['is_verified']:
-        return False
-    
-    password_hash = hash_password(password)
-    return users[username]['password_hash'] == password_hash
+    elif gesture == 'swipe_right':
+        pyautogui.scroll(3)
 \end{lstlisting}
 
 \section{Summary}
 
-This chapter presented the core algorithms and implementations of the Hand Gesture Control System. The combination of MediaPipe for hand detection, Procrustes analysis for gesture matching, and Qt threading for responsive UI creates a robust and efficient system for gesture-based computer control.
-
-
+This chapter presented the core algorithms including MediaPipe-based hand detection, Procrustes analysis for gesture recognition, and action execution for mouse control.
 % ==================== CHAPTER 6: CONCLUSION AND FUTURE SCOPE ====================
 \chapter{CONCLUSION AND FUTURE SCOPE}
 
