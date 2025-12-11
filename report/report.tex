@@ -40,10 +40,10 @@
 % ==================== HYPERREF SETUP ====================
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,      
-    urlcolor=cyan,
-    citecolor=blue,
+    linkcolor=black,
+    filecolor=black,      
+    urlcolor=black,
+    citecolor=black,
     pdftitle={Hand Gesture Control System},
     pdfauthor={CITNC CSE Department},
     bookmarks=true,
@@ -57,15 +57,22 @@
 
 % ==================== SECTION FORMATTING ====================
 \titleformat{\section}
-  {\needspace{5\baselineskip}\normalfont\large\bfseries}{\thesection}{1em}{}
+  {\needspace{8\baselineskip}\normalfont\large\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}
-  {\needspace{3\baselineskip}\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+  {\needspace{5\baselineskip}\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
 \titleformat{\subsubsection}
-  {\needspace{2\baselineskip}\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+  {\needspace{4\baselineskip}\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
 
 % Better spacing control
-\setlength{\parskip}{0.5em}
+\setlength{\parskip}{0.3em}  % Reduced from 0.5em
+\setlength{\parindent}{0pt}  % No paragraph indentation
+\linespread{1.0}  % Single line spacing (reduced from default)
 \raggedbottom  % Allow variable page heights for better layout
+
+% Prevent widows and orphans
+\widowpenalty=10000
+\clubpenalty=10000
+\displaywidowpenalty=10000
 
 % ==================== HEADER AND FOOTER ====================
 \pagestyle{fancy}
